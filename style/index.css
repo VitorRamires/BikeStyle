@@ -9,6 +9,15 @@
   src: url(../fonts/Poppins-BlackItalic.ttf);
 }
 
+@font-face {
+  font-family: "poppins-bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "poppins-semibold";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
 
 @font-face {
   font-family: "poppins-medium";
@@ -21,6 +30,11 @@
 }
 
 
+img{
+  max-width: 100%;
+}
+
+/*********** Header *****************/
 header{
   width: 100%;
   background-color: black;
@@ -54,17 +68,35 @@ header a{
   text-decoration: none;
   display: inline-block;
   padding:10px 0 10px 0;
+  position: relative;
 }
 
+header a::after{
+  content:"";
+  width: 0;
+  position: absolute;
+  bottom:12%;
+  left:0;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+header a:hover:after{
+  width: 100%;
+}
 
 @media  (max-width:939px){
   header .center{
+    width: 100%;
     display: block;
     text-align: center;
   }
 
   nav{
     margin-top:25px;
+    justify-content: space-evenly;
+    background:#151515;
   }
 }
 
@@ -83,5 +115,252 @@ header a{
   header .logo{
     font-size:1.1rem;
     margin:0 auto;
+  }
+}
+
+
+
+/************ Apresentação **************/
+
+.apresentation{
+  width: 100%;
+  background:black;
+  color:white;
+  box-shadow: inset 0 -100px 0 white;
+}
+
+.apresentation-box{
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+  padding:125px 0 55px 0;
+}
+
+.apresentation-info{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-bottom:155px;
+  gap: 45px;
+}
+
+
+.apresentation-text h2{
+  font-size: 2.3rem;
+  font-family: "poppins-bold";
+  margin-bottom:15px;
+}
+
+.apresentation-text p{
+  max-width: 35ch;
+}
+
+.apresentation-text{
+  font-size: 1rem;
+  font-family: "poppins-medium";
+}
+
+.cta a{
+  display: inline-block;
+  padding: 17px 15px 17px 15px;
+  background:#7000FE;
+  color:white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  font-family: "poppins-bold";
+}
+
+.apresentation-img, .apresentation-img img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 33px 24px -22px rgba(93,93,93,0.61);
+}
+
+.cta a:hover{
+  background:#5603c2;
+}
+
+@media  (max-width:1200px){
+
+.apresentation-text h2{
+  font-size:1.8rem;
+}
+
+.apresentation-text{
+  font-size:0.9rem;
+}
+
+}
+
+
+@media  (max-width:950px){
+.apresentation-box{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  gap: 35px;
+}
+
+.apresentation-info{
+  padding-bottom: 5px;
+  gap: 25px;
+}
+
+.apresentation-img, .apresentation-img img{
+  box-shadow: none;
+}
+
+.apresentation-text p{
+  max-width: 100%;
+}
+
+}
+
+@media  (max-width:425px){
+  .apresentation-text{
+    font-size:0.7rem;
+  }
+
+  .apresentation-text h2{
+    font-size:1.5rem;
+  }
+}
+
+@media  (max-width:425px){
+  .apresentation-text{
+    font-size:0.7rem;
+  }
+
+  .apresentation-text h2{
+    font-size:1.1rem;
+  }
+}
+
+/************* nossas-bicicletas *******************/
+
+
+.nossas-bicicletas{
+  padding:125px 0 75px 0;
+}
+
+.nossas-bicicletas-titulo{
+  font-size: 2rem;
+  position: relative;
+  color:black;
+  font-family: "poppins-semibold";
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+
+
+
+.nossas-bicicletas-titulo::before{
+  content:"";
+  position: relative;
+  width: 10px;
+  height: 45px;
+  background-color: #7000FE;
+  margin-right:15px;
+}
+
+.nossas-bicicletas-produtos{
+  margin-top:105px;
+  font-family: "poppins-medium";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 55px;
+}
+
+
+.titulo-produto h2{
+  font-size:1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom:2px;
+}
+
+.preço-produto{
+ font-size:0.9rem; 
+}
+
+.titulo-produto h2::before{
+  content:"";
+  width: 15px;
+  height: 15px;
+  background:#B174FF;
+  border-radius: 50%;
+  margin-right:10px;
+}
+
+.nossas-bicicletas .cta{
+  margin:75px auto 0 auto;
+  text-align: center;
+}
+
+@media (max-width:1180px) {
+  .titulo-produto h2{
+    font-size:1.1rem;
+  }
+
+  .preço-produto{
+    font-size:0.8rem; 
+   }
+   
+   .nossas-bicicletas-titulo{
+    font-size:1.7rem;
+   }
+}
+
+@media (max-width:1100px) {
+  .nossas-bicicletas-produtos{
+    gap: 35px;
+  } 
+}
+
+@media (max-width:950px) {
+  .nossas-bicicletas-produtos{
+    grid-template-columns: 1fr;
+    gap: 45px;
+    margin-top: 65px;
+  } 
+}
+
+@media (max-width:740px) {
+  .nossas-bicicletas-titulo{
+    font-size: 1.4rem;
+  } 
+}
+
+@media (max-width: 440px){
+.nossas-bicicletas-titulo {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 343px){
+
+  .nossas-bicicletas .cta a{
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (max-width: 315px){
+  .nossas-bicicletas-titulo {
+    font-size: 0.88rem;
+  }
+
+  .nossas-bicicletas-titulo::before{
+    width: 7px;
+    height: 35px;
   }
 }
