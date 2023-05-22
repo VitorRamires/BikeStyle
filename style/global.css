@@ -35,6 +35,11 @@
   src: url(../fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: "dancingScript";
+  src: url(../fonts/DancingScript.ttf);
+}
+
 
 @font-face {
   font-family: "poppins-light";
