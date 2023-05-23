@@ -124,7 +124,7 @@
 
 
 .nossas-bicicletas{
-  padding:125px 0 95px 0;
+  padding:125px 0 175px 0;
 }
 
 .nossas-bicicletas-titulo{
@@ -168,10 +168,12 @@
   cursor: pointer;
 }
 
-.produto:hover{
-  transform: scale(1.1);
+.produto:hover .titulo-produto h2::before {
+  width: 20px;
+  height: 20px;
   transition: 0.4s;
 }
+
 
 .preço-produto{
  font-size:0.9rem; 
@@ -184,6 +186,7 @@
   background:#B174FF;
   border-radius: 50%;
   margin-right:10px;
+  transition: 0.4s;
 }
 
 .nossas-bicicletas .cta{
@@ -274,6 +277,17 @@
   place-self: center start;
 }
 
+.personalização-info a{
+  padding: 17px 15px 17px 15px;
+  background-color:#46009c;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.personalização-info a:hover{
+  background-color:#5603c2;
+}
+
 .personalização-img::before{
   content: "";
   position: absolute;
@@ -299,7 +313,7 @@
 }
 
 .personalização-img{
-  height: 110%;
+  height: 120%;
   border-radius: 5px;
 }
 
@@ -345,9 +359,22 @@
   }
 
   .personalização{
+    position: relative;
     background-image: url(/images/ferramentas-bg.jpg);
     background-size: cover;
     background-position: center;
+  }
+
+  .personalização:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    transform: translate(-50%, -50%);
+    left:50%;
+    width: 90%;
+    height: 4.5px;
+    background-color:#b681fc;
+    z-index: 2;
   }
 
   .personalização .center{
@@ -396,6 +423,10 @@
   font-size: 0.9rem;
 }
 
+.personalização .center{
+  min-height: 550px;
+}
+
 }
 
 @media (max-width:341px){
@@ -409,11 +440,94 @@
 
 }
 
+/***********Parceiros****************/
+
+.parceiros{
+  padding: 155px 0 155px 0;
+}
+
+.parceiro-titulo{
+  font-size: 2rem;
+  position: relative;
+  font-family: "poppins-semibold";
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-bottom:55px;
+}
+
+.parceiro-titulo::before{
+  content:"";
+  position: relative;
+  width: 10px;
+  height: 45px;
+  background-color: #7000FE;
+  margin-right:15px;
+}
+
+.parceiros ul{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.parceiros li img{
+  width: inherit;
+  margin: auto;
+}
+
+.parceiros li{
+  padding: 25px;
+  display: flex;
+  border-right: 2px solid rgb(209, 209, 209);
+  border-bottom: 2px solid rgb(209, 209, 209);
+
+}
+
+.parceiros li:nth-child(n + 5){
+  border-bottom: none;
+  border-left: none;
+}
+
+.parceiros li:last-child, .parceiros li:nth-child(4){
+  border-right: none;
+}
+
+@media (max-width:750px){
+  .parceiro-titulo{
+    font-size: 1.5rem;
+  }
+
+  .parceiros ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parceiros li:nth-child(even){
+    border-right: none;
+  }
+
+  .parceiros li:nth-child(n + 5){
+    border-bottom: 2px solid rgb(209, 209, 209);
+  }
+
+  .parceiros li:last-child, .parceiros li:nth-child(7){
+    border-bottom: none;
+  }
+}
+
+@media (max-width:445px){
+
+
+  .parceiro-titulo h2{
+    font-size:1.5rem;
+  }
+}
+
 /***********Seguros****************/
 
 .seguro{
   position: relative;
-  background-color: #3F008D;
+  background-color: #1C003F;
   padding:155px 0 325px 0;
 }
 
@@ -453,6 +567,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: start;
+  font-family: "poppins-light";
 }
 
 .seguro-conteudo{
@@ -463,14 +578,14 @@
   justify-content: start;
   max-width: 80%;
   padding:35px 55px 35px 55px;
-  background-color: #3c0085;
+  background-color: #1e0046;
   font-size: 1.8rem;
   border-radius: 5px;
 }
 
 
 .luxo{
-  background-color: #30006e;
+  background-color: #3e008f;
   font-size: 2rem;
   max-width: 100%;
 }
@@ -535,26 +650,26 @@ li img{
 .inscreva-se{
   display: inline-block;
   margin-top:55px;
-  padding: 15px 15px 18px 15px;
-  background:#ffff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0s;
-}
-
-.essencial .inscreva-se{
-  background:#46009c;
+  transition: 0.5s;
 }
 
 .inscreva-se:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
-
-.inscreva-se a{
-  font-family: "poppins-semibold";
-  font-size: 1.2rem;
+.essencial .inscreva-se a{
+  padding: 17px 15px 17px 15px;
+  background-color:#46009c;
   text-decoration: none;
+  border-radius: 5px;
+}
+
+.luxo .inscreva-se a{
+  padding: 17px 15px 17px 15px;
+  background:#ffff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .seguroBox-vantagens img{
@@ -630,6 +745,10 @@ li img{
   .seguro-titulo h2{
     font-size:1.7rem;
   }
+
+    .seguro-conteudo{
+    padding: 35px 35px 35px 35px;
+  }
 }
 
 @media (max-width:445px){
@@ -653,7 +772,7 @@ li img{
   }
 
   .seguro-titulo h2{
-    font-size:1.1rem;
+    font-size:1.2rem;
   }
 
   .essencial .seguroBox-header{
@@ -663,6 +782,7 @@ li img{
   .luxo .seguroBox-header{
     font-size:1.1rem;
   }
+
 }
 
 
@@ -672,7 +792,7 @@ li img{
   }
 
   .seguro-titulo h2{
-    font-size:1.02rem;
+    font-size:1.1rem;
   }
 }
 
@@ -690,7 +810,7 @@ li img{
 }
 
 .depoimento-texto{
-  padding:45px 25px 65px 0;
+  padding:85px 25px 85px 0;
 }
 
 .depoimento-texto p{
@@ -714,11 +834,11 @@ li img{
 .bike::before{
   content: "";
   position: absolute;
-  width: 120px;
+  width: 70px;
   height: 3px;
   background:#d4d4d4;
   bottom:18%;
-  left:-45%;
+  left:-20%;
   border-radius: 5px;
 }
 
@@ -732,7 +852,7 @@ li img{
 }
 
 .bike img{
-  width: 70px;
+  width: 50px;
   height: auto;
   transform: rotateY(180deg);
   filter: brightness(0) saturate(100%) invert(15%) sepia(96%) saturate(7450%) hue-rotate(270deg) brightness(49%) contrast(109%);
@@ -778,8 +898,8 @@ li img{
   }
 
   .bike::before {
-    width: 90px;
-    left: -25%;
+    width: 60px;
+    left: -13%;
 }
 
   .depoimento-texto{

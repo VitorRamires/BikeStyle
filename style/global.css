@@ -39,6 +39,13 @@
 .center{
   width: 80%;
   margin:0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width:450px){
+  .center{
+    width: 90%;
+  }
 }
 
 img{
@@ -243,7 +250,7 @@ footer .center{
   grid-template-columns:1fr 1fr 1fr;
   justify-content:  start;
   align-items: start;
-  padding: 95px 0 145px 0;
+  padding: 145px 0 145px 0;
   gap: 100px;
 }
 
@@ -258,7 +265,7 @@ footer .links{
   display: block;
   grid-column: 3;
 }
-
+''
 footer h3{
   font-family: "poppins-blackIT";
   font-size:1.4rem;
