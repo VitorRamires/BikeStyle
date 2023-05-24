@@ -127,24 +127,6 @@
   padding:125px 0 175px 0;
 }
 
-.nossas-bicicletas-titulo{
-  font-size: 2rem;
-  position: relative;
-  font-family: "poppins-semibold";
-  display: flex;
-  align-items: center;
-  justify-self: center;
-}
-
-
-.nossas-bicicletas-titulo::before{
-  content:"";
-  position: relative;
-  width: 10px;
-  height: 45px;
-  background-color: #7000FE;
-  margin-right:15px;
-}
 
 .nossas-bicicletas-produtos{
   margin-top:105px;
@@ -313,7 +295,7 @@
 }
 
 .personalização-img{
-  height: 120%;
+  height: 110%;
   border-radius: 5px;
 }
 
@@ -446,24 +428,6 @@
   padding: 155px 0 155px 0;
 }
 
-.parceiro-titulo{
-  font-size: 2rem;
-  position: relative;
-  font-family: "poppins-semibold";
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  margin-bottom:55px;
-}
-
-.parceiro-titulo::before{
-  content:"";
-  position: relative;
-  width: 10px;
-  height: 45px;
-  background-color: #7000FE;
-  margin-right:15px;
-}
 
 .parceiros ul{
   list-style-type: none;
@@ -527,39 +491,8 @@
 
 .seguro{
   position: relative;
-  background-color: #1C003F;
+  background-color: #000000;
   padding:155px 0 325px 0;
-}
-
-.seguro::after{
-  content: "";
-  position: absolute;
-  bottom:10%;
-  left:50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 3px;
-  background-color: #6300DF;
-}
-
-.seguro-titulo{
-  font-size: 2rem;
-  position: relative;
-  font-family: "poppins-semibold";
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  margin-bottom:55px;
-}
-
-
-.seguro-titulo::before{
-  content:"";
-  position: relative;
-  width: 10px;
-  height: 45px;
-  background-color: #7000FE;
-  margin-right:15px;
 }
 
 .seguros-box{
@@ -568,40 +501,47 @@
   align-items: center;
   justify-items: start;
   font-family: "poppins-light";
+  z-index: 4;
 }
 
 .seguro-conteudo{
   width: 100%;
+  position: relative;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  max-width: 80%;
   padding:35px 55px 35px 55px;
-  background-color: #1e0046;
-  font-size: 1.8rem;
+  background-color: #141414;
+  font-size: 1.4rem;
   border-radius: 5px;
 }
 
+.seguro-conteudo::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 4.5px;
+  height: 100%;
+  background-color: #9C4EFF;
+}
 
 .luxo{
-  background-color: #3e008f;
-  font-size: 2rem;
+  font-size: 1.6rem;
   max-width: 100%;
 }
 
 .seguroBox-header{
   width: 100%;
-  margin:0 auto;
+  margin-bottom: 25px;
   display: flex;
   align-items: end;
   justify-content: space-between;
-  border-bottom: 4px solid  #5800C9;
+
 }
 
-.luxo .seguroBox-header{
-  border-bottom: 4px solid  #B174FF;
-}
 
 .seguroBox-header p{
   margin-bottom: 2%;
@@ -615,7 +555,6 @@
   font-size: 2.3rem;
 }
 
-
 .seguroBox-header{
   font-family: "poppins-semibold";
 }
@@ -625,12 +564,24 @@
 }
 
 
+
 .seguroBox-vantagens li{
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: start;
   margin:30px 0 0 0;
   font-family: "poppins-regular";
+}
+
+.seguroBox-vantagens li::before{
+  content: "";
+  width: 30px;
+  height: 15px;
+  background-image: url(../images/check-all.svg);
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .seguroBox-vantagens p{
@@ -642,10 +593,6 @@
   list-style-type: none;
 }
 
-li img{
-  width: 25px;
-  height: auto;
-}
 
 .inscreva-se{
   display: inline-block;
@@ -660,14 +607,14 @@ li img{
 
 .essencial .inscreva-se a{
   padding: 17px 15px 17px 15px;
-  background-color:#46009c;
+  background-color:#3a3a3a;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .luxo .inscreva-se a{
   padding: 17px 15px 17px 15px;
-  background:#ffff;
+  background:#9C4EFF;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -802,11 +749,12 @@ li img{
 .depoimentos{
   position: relative;
   display: grid;
-  grid-template-columns: 0.7fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   gap: 85px;
   min-height: 550px;
+  background-color: #430296;
 }
 
 .depoimento-texto{
@@ -814,8 +762,8 @@ li img{
 }
 
 .depoimento-texto p{
-  max-width: 25ch;
-  font-size:3.5rem;
+  max-width: 23ch;
+  font-size:3rem;
   font-family: "dancingScript";
 }
 
@@ -827,20 +775,11 @@ li img{
 
 .bike{
   position: absolute;
-  bottom:5%;
-  right:5%;
+  bottom:0;
+  right:1%;
 }
 
-.bike::before{
-  content: "";
-  position: absolute;
-  width: 70px;
-  height: 3px;
-  background:#d4d4d4;
-  bottom:18%;
-  left:-20%;
-  border-radius: 5px;
-}
+
 
 .depoimento-foto{
   height: 100%;
@@ -868,6 +807,10 @@ li img{
   .depoimento-texto p{
     font-size: 2rem;
   }
+
+  .depoimentos{
+    gap: 65px;
+  }
 }
 
 
@@ -875,6 +818,7 @@ li img{
   .depoimento-texto p{
     font-size: 1.7rem;
   }
+
 }
 
 @media (max-width:860px){
@@ -908,6 +852,15 @@ li img{
 
   .depoimento-texto p{
     font-size: 1.6rem;
+    max-width: 35ch;
+    text-align: center;
+  }
+
+}
+
+@media (max-width:465px){
+  .depoimento-texto p{
+    font-size: 1.4rem;
   }
 }
 

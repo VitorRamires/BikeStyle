@@ -150,11 +150,33 @@ img{
   color:#b681fc;
 }
 
+/************Titulo***************/
+
+.titulo{
+  font-size: 2rem;
+  position: relative;
+  font-family: "poppins-semibold";
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-bottom:75px;
+}
+
+.titulo::before{
+  content:"";
+  position: relative;
+  width: 10px;
+  height: 45px;
+  background-color: #7000FE;
+  margin-right:15px;
+}
+
 /*********** Header *****************/
 header{
   width: 100%;
   color:#fff;
   background-color: black;
+  padding:25px 0 25px 0;
 }
 
 header .center{
@@ -171,7 +193,6 @@ header .center{
 
 nav{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 55px;
@@ -247,7 +268,7 @@ footer .logo{
 footer .center{
   position: relative;
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns:0.7fr 1fr 1fr;
   justify-content:  start;
   align-items: start;
   padding: 145px 0 145px 0;
@@ -256,7 +277,6 @@ footer .center{
 
 .contato-footer, .interesses{
   position: relative;
-  padding-left:8%;
 }
 
 
@@ -265,7 +285,7 @@ footer .links{
   display: block;
   grid-column: 3;
 }
-''
+
 footer h3{
   font-family: "poppins-blackIT";
   font-size:1.4rem;
@@ -278,7 +298,7 @@ footer p, a{
 }
 
 
-footer .contato-footer-content, a:not(:last-child){
+footer .contato-footer-content, footer a:not(:last-child){
   margin: 0px 0 15px 0;
 }
 
@@ -290,15 +310,7 @@ footer .interesses{
   justify-content: center;
 }
 
-.contato-footer::before, .interesses::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #7000FE;
-  place-self: start;
-}
+
 
 .contato-footer-content{
   display: flex;
@@ -342,28 +354,23 @@ footer p, a{
 
 @media  (max-width:1140px){
 
-  .contato-footer, .interesses {
-    position: relative;
-    padding-left: 10'%;
+.contato-footer, .interesses {
+  position: relative;
 }
 
-  
-  }
+}
 
 
 
 @media  (max-width:980px){
-  footer .center{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 60px;
-  }
 
-  .contato-footer, .interesses {
-    position: relative;
-    padding-left: 5%;
+footer .center{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 60px;
 }
+
 
 footer h3{
   font-size:1.2rem;
@@ -377,16 +384,15 @@ footer p, a{
 }
 
 @media  (max-width:540px){
-  footer .center{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 60px;
-  }
+footer .center{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 60px;
+}
 
-  .contato-footer, .interesses {
-    position: relative;
-    padding-left: 8%;
+.contato-footer, .interesses {
+  position: relative;
 }
 
 
@@ -394,18 +400,17 @@ footer p, a{
 }
 
 @media  (max-width:390px){
-  .contato-footer, .interesses {
-    position: relative;
-    padding-left: 10%;
+.contato-footer, .interesses {
+  position: relative;
 }
 
-  footer h3{
-    font-size:0.9rem;
-  }
+footer h3{
+  font-size:0.9rem;
+}
   
-  footer p, a{
-    font-family: "poppins-medium";
-    font-size: 0.7rem;
-  }
+footer p, a{
+  font-family: "poppins-medium";
+  font-size: 0.7rem;
+}
 
 }
