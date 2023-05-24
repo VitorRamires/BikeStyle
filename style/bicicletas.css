@@ -153,6 +153,7 @@
   .bicicleta-produto{
     grid-template-columns:1fr;
     gap: 25px;
+    padding:25px 0 25px 0;
   }
   
   .info-add{
@@ -170,7 +171,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     right:50%;
-    height: 11'0%;
+    height: 100%;
   }
 }
 
