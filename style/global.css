@@ -3,6 +3,11 @@
   margin:0;
   box-sizing: border-box;
 }
+
+body{
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "poppins-blackIT";
   src: url(../fonts/Poppins-BlackItalic.ttf);
@@ -186,9 +191,9 @@ header .center{
   justify-content: space-between;
 }
 
-.logo{
+.logo a{
   font-family: "poppins-blackIT";
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 nav{
@@ -261,8 +266,9 @@ footer{
   background-color: #151515;
 }
 
-footer .logo{
-  font-size: 1.2rem;
+footer .logo a{
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 footer .center{
@@ -278,8 +284,6 @@ footer .center{
 .contato-footer, .interesses{
   position: relative;
 }
-
-
 
 footer .links{
   display: block;
@@ -345,7 +349,7 @@ footer h3{
   font-size:1rem;
 }
 
-footer p, a{
+footer p, footer a{
   font-family: "poppins-medium";
   font-size: 0.8rem;
 }

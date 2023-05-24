@@ -1,0 +1,176 @@
+
+.bicicletas-titulo{
+  width: 100%;
+  background-color:#3C3C3C;
+}
+
+.bicicletas-titulo .center{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 65px 0 65px 0;
+}
+
+.bicicletas-titulo .titulo{
+  margin-bottom:0;
+}
+
+.bicicleta-box{
+  display: flex;
+  flex-direction: column;
+  gap: 115px;
+  margin:85px 0 85px 0;
+}
+
+
+.bicicleta-produto{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 65px;
+  z-index: 5;
+}
+
+
+.bicicleta-img{
+  height: 100%;
+  z-index: 4;
+}
+
+.bicicleta-info{
+  z-index: 5;
+}
+
+.bicicleta-img img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.bicicleta-produto h2{
+  font-family: "poppins-bold";
+  font-size:2rem;
+}
+
+.bicicleta-produto .preço{
+  font-family: "poppins-medium";
+  font-size:1.3rem;
+  margin-bottom:10px;
+}
+
+.bicicleta-produto .descrição{
+  font-family: "poppins-regular";
+  font-size:1rem;
+  max-width: 55ch;
+  margin-bottom:35px;
+}
+
+.bicicleta-produto ul{
+  list-style: none;
+}
+
+.bicicleta-produto ul li{
+  font-size:1.3rem;
+  font-family: "poppins-bold";
+}
+
+.info-item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.info-item::before{
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-size:cover;
+  background-position: center;
+  margin-right:15px;
+}
+
+.item1::before{
+  background-image: url("../images/bicycle.svg");
+}
+
+.item2::before{
+  background-image: url("../images/tree-fill.svg");
+}
+
+.item3::before{
+  background-image: url("../images/hammer.svg");
+}
+
+.item4::before{
+  background-image: url("../images/heart-fill.svg");
+}
+
+.item1.white::before{
+  background-image: url("../images/bicycle-white.svg");
+}
+.item2.white::before{
+  background-image: url("../images/tree-white.svg");
+}
+.item3.white::before{
+  background-image: url("../images/hammer-white.svg");
+}
+.item4.white::before{
+  background-image: url("../images/heart-white.svg");
+}
+
+.bicicleta-produto a{
+  display: inline-block;
+  padding:15px 20px 15px 20px;
+  background-color: #7000FE;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right:15px;
+}
+
+.info-add{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.decoração{
+  top:50%;
+  transform: translateY(-50%);
+  left:15%;
+  position: absolute;
+  min-width: 1750px;
+  height: 380px;
+  background-color: #222222;
+  border-radius: 5px;
+}
+
+@media (max-width:1110px){
+  .bicicleta-produto{
+    grid-template-columns:1fr;
+    gap: 25px;
+  }
+  
+  .info-add{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .info-add ul{
+    margin-bottom:20px;
+  }
+
+  .decoração {
+    top: 50%;
+    transform: translate(-50%,-50%);
+    right:50%;
+    height: 11'0%;
+  }
+}
+
