@@ -149,7 +149,6 @@
 
 .produto:hover .titulo-produto h2::before {
   width: 20px;
-  height: 20px;
   transition: 0.4s;
 }
 
@@ -160,11 +159,10 @@
 
 .titulo-produto h2::before{
   content:"";
-  width: 15px;
+  width: 5px;
   height: 15px;
   background:#B174FF;
-  border-radius: 50%;
-  margin-right:10px;
+  margin-right:5px;
   transition: 0.4s;
 }
 
@@ -182,7 +180,7 @@
     font-size:0.8rem; 
    }
    
-   .nossas-bicicletas-titulo{
+   .nossas-bicicletas .titulo{
     font-size:1.7rem;
    }
 }
@@ -202,13 +200,13 @@
 }
 
 @media (max-width:740px) {
-  .nossas-bicicletas-titulo{
+  .nossas-bicicletas .titulo{
     font-size: 1.4rem;
   } 
 }
 
 @media (max-width: 440px){
-.nossas-bicicletas-titulo {
+  .nossas-bicicletas .titulo {
     font-size: 1rem;
   }
 }
@@ -223,13 +221,8 @@
 }
 
 @media (max-width: 315px){
-  .nossas-bicicletas-titulo {
+  .nossas-bicicletas .titulo {
     font-size: 0.88rem;
-  }
-
-  .nossas-bicicletas-titulo::before{
-    width: 7px;
-    height: 35px;
   }
 }
 
@@ -455,8 +448,8 @@
 }
 
 @media (max-width:750px){
-  .parceiro-titulo{
-    font-size: 1.5rem;
+  .parceiros h2{
+    font-size: 2rem;
   }
 
   .parceiros ul{
@@ -479,7 +472,7 @@
 @media (max-width:445px){
 
 
-  .parceiro-titulo h2{
+  .parceiros h2{
     font-size:1.5rem;
   }
 }
@@ -680,13 +673,13 @@
 
 
 @media (max-width:750px){
-  .seguro-titulo h2{
+  .seguro h2{
     font-size:2rem;
   }
 }
 
 @media (max-width:500px){
-  .seguro-titulo h2{
+  .seguro h2{
     font-size:1.7rem;
   }
 
@@ -705,7 +698,7 @@
     font-size: 0.8rem;
   }
 
-  .seguro-titulo h2{
+  .seguro h2{
     font-size:1.3rem;
   }
 }
@@ -715,7 +708,7 @@
     font-size: 0.8rem;
   }
 
-  .seguro-titulo h2{
+  .seguro h2{
     font-size:1.2rem;
   }
 
@@ -735,7 +728,7 @@
     font-size: 0.7rem;
   }
 
-  .seguro-titulo h2{
+  .seguro h2{
     font-size:1.1rem;
   }
 }

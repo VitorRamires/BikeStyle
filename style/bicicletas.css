@@ -1,8 +1,4 @@
 
-.bicicletas-titulo{
-  width: 100%;
-  background-color:#3C3C3C;
-}
 
 .bicicletas-titulo .center{
   position: relative;
@@ -53,11 +49,33 @@
 .bicicleta-produto h2{
   font-family: "poppins-bold";
   font-size:2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
+
+.preço-produto{
+ font-size:0.9rem; 
+}
+
+.bicicleta-info h2::before{
+  content:"";
+  width: 5px;
+  height: 23px;
+  background:#B174FF;
+  margin-right:10px;
+  transition: 0.4s;
+}
+
+.bicicleta-produto:hover .bicicleta-info h2::before {
+  width: 20px;
+  transition: 0.4s;
+}
+
 
 .bicicleta-produto .preço{
   font-family: "poppins-medium";
-  font-size:1.3rem;
+  font-size:0.8rem;
   margin-bottom:10px;
 }
 
@@ -132,6 +150,10 @@
   margin-right:15px;
 }
 
+.bicicleta-produto a:hover{
+  background-color: #8525FF;
+}
+
 .info-add{
   display: flex;
   align-items: end;
@@ -172,6 +194,33 @@
     transform: translate(-50%,-50%);
     right:50%;
     height: 100%;
+  }
+}
+
+@media (max-width:415px){
+  .bicicleta-produto h2{
+    font-size: 1.6rem;
+  }
+
+
+  .bicicleta-produto .descrição {
+    font-size: 0.8rem;
+  }
+
+  .bicicleta-produto ul li {
+    font-size: 1rem;
+  }
+
+  .bicicleta-box {
+    gap: 85px;
+  }
+}
+
+
+
+@media (max-width:330px){
+  .titulo-box .titulo{
+    font-size:1.5rem;
   }
 }
 

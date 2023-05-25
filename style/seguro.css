@@ -1,0 +1,268 @@
+#seguro .seguro{
+  padding: 155px 0 255px 0;
+}
+
+.vantagens{
+  background-color: black;
+}
+
+.box-vantagens{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding:0 0 155px 0;
+}
+
+.vantagem-item{
+  position: relative;
+  background-color:#151515;
+  padding:35px;
+  border-radius: 2px;
+}
+
+.vantagem-item::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 4.5px;
+  height: 100%;
+  background-color: #9C4EFF;
+}
+
+.vantagem-item p{
+  font-size: 1rem;
+  font-family: "poppins-light";
+}
+
+.vantagem-item h3{
+  position: relative;
+  margin-bottom:20px;
+  font-size:1.5rem;
+  font-family: "poppins-semibold";
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.vantagem-item h3::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right:15px;
+}
+
+.vant-item1 h3::before{
+  content: "";
+  background-image: url(../images/clock-fill.svg);
+}
+.vant-item2 h3::before{
+  content: "";
+  background-image: url(../images/percent.svg);
+}
+.vant-item3 h3::before{
+  content: "";
+  background-image: url(../images/shield-lock-fill.svg);
+}
+.vant-item4 h3::before{
+  content: "";
+  background-image: url(../images/person-circle.svg);
+}
+
+@media (max-width:1370px){
+  .vantagem-item p{
+    font-size: 0.8rem;
+  }
+  
+  .vantagem-item h3{
+    font-size:1.3rem;
+  }
+}
+
+@media (max-width:1150px){
+  .box-vantagens{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width:520px){
+  .vantagem-item p{
+    font-size: 0.65rem;
+  }
+  
+  .vantagem-item h3{
+    font-size:1.2rem;
+  }
+
+  .vantagens .titulo{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:390px){
+  .vantagem-item p{
+    font-size: 0.55rem;
+  }
+  
+  .vantagem-item h3{
+    font-size:0.8rem;
+  }
+
+  .vantagem-item h3::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width:283px){
+  
+  .vantagem-item h3{
+    font-size:0.7rem;
+  }
+}
+
+.perguntas-item{
+  position: relative;
+  padding:25px 35px 25px 35px;
+  cursor: pointer;
+}
+
+.perguntas-item::before{
+  content: "";
+  position: absolute;
+  top:18%;
+  left:0;
+  width: 4.5px;
+  height: 25px;
+  background-color: #9C4EFF;
+  transform: rotate(90deg);
+}
+
+.perguntas-item:nth-child(odd){
+  background-color: #f3f3f3;
+  margin:15px 0 15px 0;
+}
+
+.perguntas .titulo{
+  margin-top:125px;
+}
+
+.perguntas-item h3{
+  font-size:1.5rem;
+  margin-bottom:10px;
+  font-family: "poppins-semibold";
+}
+
+.perguntas-item p{
+  font-size:0.85rem;
+  max-width: 100ch;
+  font-family: "poppins-light";
+}
+
+.arrow{
+  position: absolute;
+  right:1%;
+  top:5%;
+  transition: 0.3s;
+}
+
+.perguntas-item:hover .arrow{
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+@media (max-width:1120px){
+  .perguntas-item h3{
+    font-size:1.3rem;
+  }
+  
+  .perguntas-item p{
+    font-size:0.7rem;
+  }
+}
+
+@media (max-width:860px){
+  .perguntas-item h3{
+    font-size:1.1rem;
+  }
+  
+  .perguntas-item p{
+    font-size:0.8rem;
+  }
+
+  .arrow img{
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width:700px){
+  .perguntas-item h3{
+    font-size:0.9rem;
+  }
+  
+  .perguntas-item p{
+    font-size:0.6rem;
+  }
+}
+
+@media (max-width:720px){
+  .perguntas .titulo{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media (max-width:600px){
+  .perguntas-item h3{
+    font-size:0.6rem;
+  }
+  
+  .perguntas-item p{
+    font-size:0.5rem;
+  }
+
+  .perguntas-item::before{
+    content: "";
+    position: absolute;
+    top:18%;
+    left:0;
+    width: 3.5px;
+    height: 15px;
+    background-color: #9C4EFF;
+    transform: rotate(90deg);
+  }
+  
+}
+
+@media (max-width:552px){
+  .perguntas .titulo{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:405px){
+  .perguntas .titulo{
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width:300px){
+  .perguntas .titulo{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:285px){
+  .perguntas .titulo{
+    font-size: 0.7rem;
+  }
+}

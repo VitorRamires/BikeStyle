@@ -106,7 +106,7 @@ img{
 }
 
 .color-s2{
-  color: #151515;
+  color: #111111;
 }
 
 .color-s3{
@@ -176,6 +176,22 @@ img{
   margin-right:15px;
 }
 
+.titulo-box{
+  width: 100%;
+  background-color:#2C2C2C;
+}
+
+.titulo-box .center{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 65px 0 65px 0;
+}
+
+.titulo-box .titulo{
+  margin-bottom:0;
+}
+
 /*********** Header *****************/
 header{
   width: 100%;
@@ -238,9 +254,16 @@ header a:hover:after{
   nav{
     margin-top:25px;
     justify-content: space-evenly;
-    background:#151515;
+    background:black;
+    padding-bottom: 25px;
   }
+
+  header{
+    padding: 25px 0 0 0;
+  }
+
 }
+
 
 @media  (max-width:465px){
   header .center{
@@ -258,9 +281,19 @@ header a:hover:after{
     font-size:1.1rem;
     margin:0 auto;
   }
+
 }
 
-/******************** footer *************/
+@media  (max-width:470px){
+  .logo a{
+    font-family: "poppins-blackIT";
+    font-size: 2.5rem;
+  }
+}
+
+
+
+/******************** footer ************************/
 
 footer{
   background-color: #151515;
