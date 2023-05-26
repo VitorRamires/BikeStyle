@@ -1,5 +1,5 @@
 #seguro .seguro{
-  padding: 155px 0 255px 0;
+  padding: 155px 0 140px 0;
 }
 
 .vantagens{
@@ -125,6 +125,10 @@
   .vantagem-item h3{
     font-size:0.7rem;
   }
+}
+
+.perguntas-box{
+  margin-bottom: 75px;
 }
 
 .perguntas-item{

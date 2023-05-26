@@ -48,26 +48,8 @@
   }
 }
 
-@media (max-width:402px){
-  #termos .titulo-box .titulo{
-    font-size:1rem;
-  }
 
-  .termos-conteudo p{
-    font-size:0.8rem;
-  }
-
-  .termos-titulo .center {
-    padding: 35px 0 35px 0;
-  }
-
-  .termos-conteudo {
-    padding: 55px 0 125px 0;
-}
-
-}
-
-@media (max-width:340px){
+@media (max-width:422px){
   #termos .titulo-box .titulo{
     font-size:0.9rem;
   }
@@ -83,8 +65,12 @@
   
 }
 
-@media (max-width:292px){
- #termos .titulo-box .titulo{
+
+
+
+
+@media (max-width:300px){
+  #termos .titulo-box .titulo{
     font-size:0.8rem;
   }
 }

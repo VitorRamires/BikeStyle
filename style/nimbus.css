@@ -1,0 +1,284 @@
+
+#nimbus{
+  background-color: black;
+  padding:100px 0 100px 0;
+}
+
+.nimbus{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color:white;
+  width: 80%;
+  margin:0 auto;
+  align-items:start;
+  gap: 40px;
+}
+
+
+
+.produto-img-box{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.produto-img{
+  position: relative;
+}
+
+.produto-img::before{
+  content:"R$ 1745, 90";
+  padding:10px 15px 10px 15px;
+  text-align: center;
+  background-color:#7000FE;
+  position: absolute;
+  top:-5%;
+  left:0;
+  color:white;
+  font-size:1.4rem;
+  font-family: "poppins-medium";
+  border-radius: 5px 5px 5px 0;
+  height: auto;
+
+}
+
+
+
+.produto-img-slide{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produto-img-slide{
+  width: 33.3%;
+  height: auto;
+}
+
+.produto-img-slide img{
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.produto-img-slide img:last-child{
+  border-right:none;
+}
+
+.produto-img-slide img:first-child{
+  border-left:none;
+}
+
+
+.nimbus-titulo{
+  font-family: "poppins-bold";
+  font-size:1.7rem;
+}
+
+.produto-vantagens{
+  display: grid;
+  width: 100%;
+  max-width: 600px;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin-top:55px;
+  background-color:#0E0E0E;
+  padding: 35px 35px 35px 35px;
+  border-radius: 5px;
+}
+
+.vantagem-nimbus:nth-child(1), .vantagem-nimbus:nth-child(2){
+  border-bottom: 2px solid #4b4b4b;
+  padding-bottom:25px;
+}
+
+.vantagem-nimbus h3{
+  font-family: "poppins-bold";
+  font-size:1.2rem;
+  margin-bottom:5px;
+}
+
+.vantagem-nimbus{
+  font-family: "poppins-medium";
+  font-size:0.85rem;
+  max-width: 27ch;
+}
+
+.comprar{
+  margin-top:75px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.cta-comprar a{
+  display: inline-block;
+  padding: 17px 15px 17px 15px;
+  background: #7000FE;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  font-family: "poppins-bold";
+}
+
+
+.ficha-tecnica{
+  margin-top:95px;
+}
+
+.formas-pagamento{
+  font-family: "poppins-bold";
+  font-size:0.7rem;
+}
+
+.formas-pagamento p{
+  margin:8px 0 8px 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.formas-pagamento p::before{
+  content:"";
+  width: 13px;
+  height: 13px;
+  background-size:cover;
+  background-position: center;
+  margin-right:10px;
+}
+
+.formas-pagamento .credito::before{
+  background-image: url(../images/credit-card-fill.svg);
+}
+
+.formas-pagamento .entrega::before{
+  background-image: url(../images/truck-front-fill.svg);
+}
+
+.ficha-tecnica{
+  width: 100%;
+  max-width: 450px;
+  background-color:#0E0E0E;
+  padding:25px;
+  border-radius: 5px;
+}
+
+.titulo-ficha{
+  font-family: "poppins-regular";
+  font-size:1rem;
+  margin-bottom:15px;
+}
+
+
+.ficha-conteudo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "poppins-light";
+  font-size:0.8rem;
+}
+
+.ficha-conteudo p{
+  margin:5px 0 5px 0;
+}
+
+
+
+@media (max-width:1360px){
+  .produto-img::before{
+    font-size:1rem;
+  }
+}
+
+@media (max-width:1230px){
+  .vantagem-nimbus{
+    font-family: "poppins-medium";
+    font-size:0.65rem;
+    max-width: 27ch;
+  }
+
+  .cta-comprar a{
+    font-size: 1.05rem;
+  }
+}
+
+
+@media (max-width:1025px){
+  .nimbus{
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .produto-vantagens{
+    margin-top: 25px;
+  }
+
+  .vantagem-nimbus{
+    font-family: "poppins-medium";
+    font-size:0.65rem;
+    max-width: 45ch;
+  }
+
+  .vantagem-nimbus{
+    border-bottom: 2px solid #4b4b4b;
+    padding-bottom:25px;
+  }
+}
+
+
+@media (max-width:600px){
+
+  .produto-vantagens{
+    grid-template-columns:1fr;
+  }
+
+  .vantagem-nimbus{
+    max-width: none;
+  }
+
+  .produto-img::before{
+    font-size:0.8rem;
+  }
+
+}
+
+@media (max-width:500px){
+  .comprar{
+    flex-direction: column;
+    align-items: start;
+    justify-self: center;
+  }
+
+  .ficha-conteudo{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width:410px){
+
+  .nimbus-titulo{
+    font-family: "poppins-bold";
+    font-size:1.4rem;
+  }
+
+  .produto-img::before{
+    font-size:0.6rem;
+    top:-10%;
+  }
+
+
+}
+
+@media (max-width:350px){
+
+  .nimbus-titulo{
+    font-family: "poppins-bold";
+    font-size:1.1rem;
+  }
+
+  .vantagem-nimbus h3{
+    font-size:1rem;
+  }
+  
+
+}
