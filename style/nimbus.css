@@ -27,7 +27,6 @@
 }
 
 .produto-img::before{
-  content:"R$ 1745, 90";
   padding:10px 15px 10px 15px;
   text-align: center;
   background-color:#7000FE;
@@ -39,9 +38,19 @@
   font-family: "poppins-medium";
   border-radius: 5px 5px 5px 0;
   height: auto;
-
 }
 
+.n-1000 .produto-img::before{
+  content:"R$ 999, 90";
+}
+
+.n-2000 .produto-img::before{
+  content:"R$ 1399, 90";
+}
+
+.n-3000 .produto-img::before{
+  content:"1745, 90";
+}
 
 
 .produto-img-slide{
