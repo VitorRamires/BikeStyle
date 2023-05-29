@@ -1,29 +1,34 @@
 
-#nimbus{
-  background-color: black;
-  padding:100px 0 100px 0;
-}
+
 
 .nimbus{
+  padding:100px 0 100px 0;
+  width: 100%;
+  background-color: black;
+}
+
+.nimbus .center{
   display: grid;
   grid-template-columns: 1fr 1fr;
   color:white;
-  width: 80%;
   margin:0 auto;
   align-items:start;
   gap: 40px;
 }
 
-
-
 .produto-img-box{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 100%;
 }
 
 .produto-img{
   position: relative;
+}
+
+.produto-img img{
+  object-fit: cover;
 }
 
 .produto-img::before{
@@ -31,12 +36,12 @@
   text-align: center;
   background-color:#7000FE;
   position: absolute;
-  top:-5%;
+  top:0;
   left:0;
   color:white;
   font-size:1.4rem;
   font-family: "poppins-medium";
-  border-radius: 5px 5px 5px 0;
+  border-radius: 0px 0px 5px 0px;
   height: auto;
 }
 
@@ -62,7 +67,6 @@
 
 .produto-img-slide{
   width: 33.3%;
-  height: auto;
 }
 
 .produto-img-slide img{
@@ -89,7 +93,7 @@
   max-width: 600px;
   grid-template-columns: 1fr 1fr;
   gap: 35px;
-  margin-top:55px;
+  margin-top:70px;
   background-color:#0E0E0E;
   padding: 35px 35px 35px 35px;
   border-radius: 5px;
@@ -127,6 +131,10 @@
   font-size: 1.25rem;
   border-radius: 5px;
   font-family: "poppins-bold";
+}
+
+.cta-comprar a:hover{
+  background: #5603c2;
 }
 
 
@@ -190,6 +198,10 @@
   margin:5px 0 5px 0;
 }
 
+.opção:hover .titulo-produto h2::before {
+  width: 20px;
+  transition: 0.4s;
+}
 
 
 @media (max-width:1360px){
@@ -198,25 +210,29 @@
   }
 }
 
-@media (max-width:1230px){
+@media (max-width:1255px){
   .vantagem-nimbus{
     font-family: "poppins-medium";
-    font-size:0.65rem;
-    max-width: 27ch;
+    max-width: 35ch;
   }
+
+  .produto-vantagens{
+    max-width: 100%;
+  }
+
 
   .cta-comprar a{
     font-size: 1.05rem;
+  }
+
+  .nimbus .center{
+    grid-template-columns: 1fr;
+    gap: 60px;
   }
 }
 
 
 @media (max-width:1025px){
-  .nimbus{
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
-
   .produto-vantagens{
     margin-top: 25px;
   }
@@ -230,6 +246,10 @@
   .vantagem-nimbus{
     border-bottom: 2px solid #4b4b4b;
     padding-bottom:25px;
+  }
+
+  .maisOpções-box {
+    flex-direction: column;
   }
 }
 
@@ -248,6 +268,8 @@
     font-size:0.8rem;
   }
 
+
+
 }
 
 @media (max-width:500px){
@@ -261,6 +283,9 @@
     grid-template-columns: 1fr;
   }
 
+  .mais-opções .titulo2{
+    font-size:1.7rem;
+  }
 }
 
 @media (max-width:410px){
@@ -272,7 +297,6 @@
 
   .produto-img::before{
     font-size:0.6rem;
-    top:-10%;
   }
 
 
@@ -288,6 +312,26 @@
   .vantagem-nimbus h3{
     font-size:1rem;
   }
-  
+
+  .mais-opções .titulo2{
+    font-size:1.2rem;
+  }
 
 }
+
+.mais-opções{
+  background:#ffff;
+  padding:100px 0 100px 0;
+}
+
+.maisOpções-box{
+  font-family: "poppins-medium";
+  display: flex;
+  gap: 55px;
+}
+
+.opção-img img{
+  object-fit: cover;
+  height: 100%;
+}
+

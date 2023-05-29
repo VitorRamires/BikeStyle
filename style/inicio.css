@@ -153,8 +153,9 @@
 }
 
 
+
 .preço-produto{
- font-size:0.9rem; 
+  font-size:0.9rem; 
 }
 
 .titulo-produto h2::before{
@@ -178,11 +179,7 @@
 
   .preço-produto{
     font-size:0.8rem; 
-   }
-   
-   .nossas-bicicletas .titulo{
-    font-size:1.7rem;
-   }
+  }
 }
 
 @media (max-width:1100px) {
@@ -200,14 +197,14 @@
 }
 
 @media (max-width:740px) {
-  .nossas-bicicletas .titulo{
-    font-size: 1.4rem;
+  .nossas-bicicletas h2{
+    font-size: 2rem;
   } 
 }
 
 @media (max-width: 440px){
-  .nossas-bicicletas .titulo {
-    font-size: 1rem;
+  .nossas-bicicletas h2 {
+    font-size: 1.4rem;
   }
 }
 
@@ -218,12 +215,6 @@
     font-size: 0.9rem;
   }
 
-}
-
-@media (max-width: 315px){
-  .nossas-bicicletas .titulo {
-    font-size: 0.88rem;
-  }
 }
 
 
