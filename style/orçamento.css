@@ -1,0 +1,287 @@
+.orçamento{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #3F008D;
+  position: relative;
+}
+
+
+.info-pessoais h3, 
+.info-entrega h3{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.info-pessoais h3::before, 
+.info-entrega h3::before{
+  content: "";
+  width: 5px;
+  height: 15px;
+  background:#7000FE;
+  display: inline-block;
+  margin-right:7px;
+}
+
+.form{
+  height: 100%;
+}
+
+.orçamento .form-item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.info-pessoais, 
+.info-entrega{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  position: relative;
+}
+
+.info-pessoais::after{
+  content: "";
+  position: absolute;
+  bottom:-17%;
+  left:50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background:#eeeeee;
+}
+
+.orçamento button{
+  width: 55%;
+  margin-top:70px;
+}
+
+.orçamento input{
+  width: 100%;
+}
+
+.info-entrega{
+  margin-top:125px;
+}
+
+.CPF{
+  grid-column: 1 / -1;
+}
+
+.estado{
+  grid-column: 1;
+}
+
+.orçamento-decoração{
+  position: absolute;
+  width: 100%;
+  height: 525px;
+  background-color: #111111;
+  z-index: 8;
+}
+
+#opção-bicicletas img{
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.orçamento .form-adicional{
+  display: block;
+}
+
+.produto-orçamento h2{
+  margin-bottom:10px;
+}
+
+
+.produto-orçamento  input{
+  opacity: 0;
+  position: absolute;
+  max-width: max-content;
+}
+
+.produto-orçamento  label{
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  background-color: #423E3E;
+  border-radius: 15px;
+  color:#A6A6A6;
+  width: max-content;
+}
+
+.produto-orçamento  label::before{
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background:#adadad;
+  border-radius: 50%;
+  margin-right:10px;
+}
+
+.produto-orçamento input:checked + label{
+  background-color: #ffffff;
+  color:#000000;
+}
+
+.produto-orçamento  input:checked + label::before{
+  background-color: #8525FF;
+}
+
+
+.orçamento .seguroBox-vantagens li{
+  margin:14px 0 0 0;
+}
+
+.orçamento .seguroBox-vantagens{
+  background:#5403be;
+  padding:10px 20px 20px 10px;
+  border-radius: 15px;
+  font-size:1rem;
+  display: none;
+}
+
+#luxo:checked ~ .vantagens-luxo,
+#essencial:checked ~ .vantagens-essencial{
+  display: block;
+}
+
+#opção-seguros, 
+#opção-bicicletas{
+  display: flex;
+  flex-direction: column;
+  margin-top:55px;
+  gap: 15px;
+  align-items: start;
+  justify-content: center;
+  display: none;
+  
+}
+
+#Bicicleta:checked ~ #opção-bicicletas{
+  display: flex;
+}
+
+#Seguro:checked ~ #opção-seguros{
+  display: flex;
+}
+
+
+#Ambos:checked ~ #opção-seguros{
+  display: flex;
+}
+
+#Ambos:checked ~ #opção-bicicletas{
+  display: flex;
+}
+
+.nimbus3, 
+.nimbus2, 
+.nimbus1{
+  display: none;
+}
+
+#nimbus3:checked ~ .nimbus3, 
+#nimbus2:checked ~ .nimbus2,
+#nimbus1:checked ~ .nimbus1{
+  display: block;
+}
+
+.seguro-item, .bicicleta-item, .ambos-item{
+  margin-top:15px;
+}
+
+.form input[type="number"]:focus{
+  outline: none;
+  border-color:#7000FE;
+  box-shadow: 0 0 0 1px #7000FE;
+  border-radius: 5px;
+}
+
+@media (max-width:900px){
+  .info-pessoais, 
+  .info-entrega{
+    grid-template-columns:1fr;
+    }
+  
+  .orçamento .telefone {
+    grid-column: 1;
+  }
+}
+
+@media (max-width:800px){
+  .orçamento button{
+    font-size:1.2rem;
+  }
+}
+
+@media (max-width:690px){
+  .orçamento button{
+    width: 100%;
+  }
+}
+
+@media (max-width:600px){
+  .produto-orçamento  label{
+    display: block;
+  }
+
+  .produto-orçamento h2{
+    margin-bottom:25px;
+  }
+
+  .seguro-item{
+    margin:10px 0 10px 0;
+  }
+
+  .seguro-item{
+    margin:17px 0 17px 0;
+  }
+
+}
+
+
+
+
+@media (max-width:500px){
+  .produto-orçamento h2{
+    font-size:1.3rem;
+  }
+
+  .orçamento .seguroBox-vantagens{
+    font-size:0.8rem;
+  }
+
+}
+
+@media (max-width:450px){
+  .orçamento .form-adicional, .form {
+    padding: 55px 25px 55px 25px;
+}
+}
+
+@media (max-width:342px){
+  .produto-orçamento h2{
+    font-size:1rem;
+  }
+
+  .orçamento .seguroBox-vantagens{
+    font-size:0.6rem;
+  }
+
+  .orçamento button{
+    font-size:0.9rem;
+  }
+
+  .info-pessoais h3{
+    font-size:0.95rem;
+  }
+}

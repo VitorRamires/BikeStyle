@@ -115,19 +115,15 @@
 .item1::before{
   background-image: url("../images/bicycle.svg");
 }
-
 .item2::before{
   background-image: url("../images/tree-fill.svg");
 }
-
 .item3::before{
   background-image: url("../images/hammer.svg");
 }
-
 .item4::before{
   background-image: url("../images/heart-fill.svg");
 }
-
 .item1.white::before{
   background-image: url("../images/bicycle-white.svg");
 }
@@ -165,7 +161,7 @@
   transform: translateY(-50%);
   left:15%;
   position: absolute;
-  min-width: 1750px;
+  min-width: 250%;
   height: 380px;
   background-color: #222222;
   border-radius: 5px;
@@ -192,8 +188,9 @@
   .decoração {
     top: 50%;
     transform: translate(-50%,-50%);
-    right:50%;
+    left:50%;
     height: 100%;
+    width: 130%;
   }
 }
 

@@ -85,6 +85,7 @@
 .nimbus-titulo{
   font-family: "poppins-bold";
   font-size:1.7rem;
+  margin-bottom:10px;
 }
 
 .produto-vantagens{
@@ -93,7 +94,7 @@
   max-width: 600px;
   grid-template-columns: 1fr 1fr;
   gap: 35px;
-  margin-top:70px;
+  margin-top:80px;
   background-color:#0E0E0E;
   padding: 35px 35px 35px 35px;
   border-radius: 5px;
@@ -108,7 +109,24 @@
   font-family: "poppins-bold";
   font-size:1.2rem;
   margin-bottom:5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
+
+
+.vantagem-nimbus h3::before{
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-size:cover;
+  background-position: center;
+  margin-right:15px;
+  background-image: url("../images/bicycle-white.svg");
+}
+
 
 .vantagem-nimbus{
   font-family: "poppins-medium";
@@ -117,7 +135,7 @@
 }
 
 .comprar{
-  margin-top:75px;
+  margin-top:35px;
   display: flex;
   gap: 15px;
   align-items: center;
@@ -137,10 +155,6 @@
   background: #5603c2;
 }
 
-
-.ficha-tecnica{
-  margin-top:95px;
-}
 
 .formas-pagamento{
   font-family: "poppins-bold";
@@ -178,6 +192,7 @@
   background-color:#0E0E0E;
   padding:25px;
   border-radius: 5px;
+  margin-top:45px;
 }
 
 .titulo-ficha{

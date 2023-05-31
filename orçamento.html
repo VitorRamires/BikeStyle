@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/index.css">
+  <title>Bicicletas</title>
+</head>
+<body>
+  
+
+<header class="color-s1">
+  <div class="center">
+    <div class="logo">
+      <a class="color-s12" href="./index.html">BikeStyle</a>
+    </div>
+    <nav>
+      <a class="color-s11" href="./bicicletas.html">Bicicletas</a>
+      <a class="color-s11" href="./seguro.html">Seguro</a>
+      <a class="color-s11" href="./contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+  
+  
+  
+
+<main>
+
+<section class="orçamento">
+
+<div class="orçamento-decoração"></div>
+
+  <div class="form-box">
+    <div class="produto-orçamento form-adicional">
+      <h2 class="color-s12">Bicicleta ou seguro?</h2>
+
+      <input type="radio" name="tipo" value="Bicicleta" id="Bicicleta">
+      <label for="Bicicleta" class="bicicleta-item">Bicicleta</label>
+
+      <input type="radio" name="tipo" value="Seguro" id="Seguro">
+      <label for="Seguro" class="seguro-item">Seguro</label>
+
+      <input type="radio" name="tipo" value="Ambos" id="Ambos">
+      <label for="Ambos" class="ambos-item">Ambos</label>
+
+      <div id="opção-seguros">
+        <h2 class="color-s12">Escolha seu seguro</h2>
+
+        <input type="radio" name="seguro-itens" value="luxo" id="luxo">
+        <label for="luxo">Luxo</label>
+        <aside class="seguroBox-vantagens vantagens-luxo">
+          <ul class="color-s12">
+            <li><p>5 trocas  por ano</p></li>
+            <li><p>Assistencia Especial </p></li>
+            <li><p>Suporte 24h</p></li>
+            <li><p>Cobertura Nacional</p></li>
+            <li><p>Desconto de até 60%</p></li>
+            <li><p>Entrega Premium</p></li>
+          </ul>
+        </aside>
+
+        <input type="radio" name="seguro-itens" value="essencial" id="essencial">
+        <label for="essencial">Essencial</label>
+        <aside class="seguroBox-vantagens vantagens-essencial">
+          <ul class="color-s12">
+            <li><p>1 troca por ano</p></li>
+            <li><p>Assistencia técnica </p></li>
+            <li><p>Suporte das 9h as 18h</p></li>
+            <li><p>Cobertura estadual</p></li>
+          </ul>
+        </aside>
+      </div>
+
+
+      <div id="opção-bicicletas">
+        <h2 class="color-s12">Escolha sua bicicleta</h2>
+        
+        <input type="radio" name="bicicletas-itens" value="nimbus3" id="nimbus3">
+        <label for="nimbus3">Nimbus 3000</label>
+        <img src="./images/nimbus2.jpg" alt="nimbus3000" class="nimbus3">
+
+        <input type="radio" name="bicicletas-itens" value="nimbus2" id="nimbus2">
+        <label for="nimbus2">Nimbus 2000</label>
+        <img src="./images/nimbus1.jpg" alt="nimbus2000" class="nimbus2">
+
+        <input type="radio" name="bicicletas-itens" value="nimbus1" id="nimbus1">
+        <label for="nimbus1">Nimbus 1000</label>
+        <img src="./images/nimbus3.jpg" alt="nimbus3000" class="nimbus1">
+
+      </div>
+    </div>
+
+
+    <form action="./orçamento.html" class="form">
+      <div class="info-pessoais">
+        <h3>Informações Pessoais</h3>
+        <div class=" form-item nome">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+        <div class="form-item telefone">
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" name="telefone">
+        </div>
+        <div class="form-item CPF">
+          <label for="CPF">CPF</label>
+          <input type="number" id="CPF" name="CPF">
+        </div>
+        <div class="form-item email">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+      </div>
+      <div class="info-entrega">
+        <h3>Entrega</h3>
+        <div class=" form-item estado">
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado">
+        </div>
+        <div class="form-item cidade">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade">
+        </div>
+        <div class="form-item CEP">
+          <label for="CEP">CEP</label>
+          <input type="number" id="CEP" name="CEP">
+        </div>
+        <div class="form-item Numero">
+          <label for="Numero">Numero</label>
+          <input type="number" id="Numero" name="Numero">
+        </div>
+        <div class="form-item Bairro">
+          <label for="Bairro">Bairro</label>
+          <input type="text" id="Bairro" name="Bairro">
+        </div>
+      </div>
+      <button class="color-s12">Solicitar Orçamento</button>
+    </form>
+    
+
+</section>
+
+</main>
+
+
+
+<footer>
+  <div class="center">
+    <div class="logo color-s11">
+      <a class="color-s12" href="./index.html">BikeStyle</a>
+    </div>
+    <div class="contato-footer">
+      <h3 class="color-s9">Contato</h3>
+      <div class="contato-footer-content">
+        <img src="./images/telephone-fill.svg" alt="phone-icon">
+        <a class="color-s7">52 9812 0992 1284 212</p>
+        </div>
+        <div class="contato-footer-content">
+          <img src="./images/envelope-at-fill.svg" alt="phone-icon">
+          <p class="color-s7">bikestyle@homail.com</p>
+        </div>
+        <div class="contato-footer-content">
+          <img src="./images/geo-alt-fill.svg" alt="phone-icon">
+          <p class="color-s7">Rua logo ali, 422. SP - São Paulo</p>
+        </div>
+        <div class="redes-sociais">
+          <a class="icone-footer" href="#">
+            <img src="./images/facebook.svg" alt="">
+          </a>
+          <a class="icone-footer" href="#">
+            <img src="./images/instagram.svg" alt="">
+          </a>
+          <a class="icone-footer" href="#">
+            <img src="./images/twitter.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="interesses">
+        <h3 class="color-s9">Interesses</h3>
+        <a class="color-s7" href="./bicicletas.html">Bicicletas</a>
+        <a class="color-s7" href="./seguros.html">Seguros</a>
+        <a class="color-s7" href="./contato.html">Contato</a>
+        <a class="color-s7" href="./Termos.html">Termos e condições</a>
+        <a class="color-s7" href="./orçamento.html">Orçamentos</a>
+        <a class="color-s7" href="./suporte.html">Suporte</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

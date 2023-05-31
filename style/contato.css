@@ -14,14 +14,13 @@
   align-items: center;
   justify-content: center;
   padding:225px 0 225px 0;
-  z-index: 8;
-  
+  z-index: 8;  
 }
 
 .contato-decoração{
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 50%;
   background-color: #111111;
   z-index: 7;
 }
@@ -32,35 +31,35 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding:55px;
-  font-family: "poppins-light";
-  font-size:1.2rem;
+  font-family: "poppins-regular";
+  font-size:1.1rem;
+  border-radius: 5px 0 0 5px;
 }
 
-.contato-form:nth-child(3){
+
+.contato-form:nth-child(4){
   max-width: 20ch;
 }
 
 .contato-form img{
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
 }
 
-.form-adicional img{
-  width: 30px;
-  height: 30px;
-}
+
 
 .form-adicional .redes-sociais, .contato-form img{
   gap: 35px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
-form{
+.form{
   background:#ffff;
   padding:55px;
-  font-family: "poppins-regular";
+  font-family: "poppins-medium";
+  border-radius: 0 5px 5px 0;
 }
 
 .informação-contato{
@@ -80,31 +79,46 @@ form{
 }
 
 .nome input, .telefone input{
-  width: 141%;
+  width: 105%;
+  font-family: "poppins-regular";
 }
 
 
 .email, textarea, .email input{
   grid-column: 1 / -1;
   width: 100%;
+  font-family: "poppins-regular";
 }
 
-form h2{
+.form h2{
   position: relative;
   font-family: "poppins-medium";
   margin-bottom:35px;
+  margin-left:15px;
 }
 
+.form h2::before{
+  position: absolute;
+  content:"";
+  left:-15px;
+  top:50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 20px;
+  background:#7000FE;
+}
 
-.form-item h3{
-  margin-bottom:8px;
+.meios-contatos{
+  font-size:1.5rem;
+  margin-bottom:25px;
 }
 
 input{
-  height: 33px;
+  height: 45px;
   border-radius: 5px;
   border:2px solid #F3F3F3;
   background-color: #F3F3F3;
+  margin-top:5px;
 }
 
 
@@ -115,17 +129,125 @@ textarea{
   font-family: "poppins-regular";
 }
 
-form input, textarea{
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus{
+  outline: none;
+  border-color:#7000FE;
+  box-shadow: 0 0 0 1px #7000FE;
+  border-radius: 5px;
+}
+
+.form input, textarea{
   padding:10px;
 }
 
 button{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   width: 45%;
   height: 65px;
   margin-top:30px;
   background-color: #7000FE;
   border:2px solid #7000FE;
   font-family: "poppins-bold";
+  border-radius: 5px;
 }
 
+button:hover{
+  background-color:#5603c2;
+  background-color:#5603c2;
+  cursor:pointer;
+}
+
+@media (max-width:1250px){
+  .form-box {
+    width: 80%;
+    grid-template-columns: 1fr;
+  }
+
+  .meios-contatos{
+    font-size:1.3rem;
+  }
+
+  .telefone, .nome, .nome input, .telefone input{
+    width: 100%;
+  }
+
+  .contato-form{
+    font-size: 1rem;
+    max-width: initial !important;
+  }
+
+  .contato-form:nth-child(3){
+    margin:35px 0 35px 0;
+  }
+
+  .meios-contatos{
+    margin-bottom:55px;
+  }
+
+  .form-adicional {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .form{
+    border-radius: 0 0 5px 5px;
+  }
+
+  .form-adicional .redes-sociais{
+    margin-top:65px;
+  }
+
+  .telefone{
+    grid-column: 2;
+  }
+}
+
+@media (max-width:640px){
+  button{
+    width: 100%;
+  }
+}
+
+@media (max-width:566px){
+  .contato-form{
+    font-size: 0.8rem;
+  }
+
+  .form-adicional img{
+    width: 23px;
+    height: 23px;
+    gap: 15px;
+  }
+
+  .informação-contato{
+    grid-template-columns: 1fr;
+  }
+
+  .telefone{
+    grid-column: 1;
+  }
+
+  .meios-contatos{
+    font-size:1.1rem;
+  }
+
+}
+
+@media (max-width:400px){
+  .titulo-contato{
+    font-size: 0.8rem;
+  }
+
+  .informação-contato h3{
+    font-size:0.8rem
+  }
+
+  .form-adicional, .form {
+    padding: 55px 25px 55px 25px;
+}
+
+.meios-contatos{
+  font-size:0.9rem;
+}
+}
