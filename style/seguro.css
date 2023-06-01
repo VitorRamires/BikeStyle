@@ -260,8 +260,8 @@
 
 
 @media (max-width:300px){
-  .perguntas .titulo{
-    font-size: 0.8rem;
+  .essencial .seguroBox-header {
+    font-size: 1.2rem;
   }
 }
 

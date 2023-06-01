@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,126 +8,125 @@
   <link rel="stylesheet" href="./style/index.css">
   <title>Inicio</title>
 </head>
+
 <body>
-<header class="color-s1">
-  <div class="center">
-    <div class="logo">
-      <a class="color-s12" href="./index.html">BikeStyle</a>
+  <header class="color-s1">
+    <div class="center">
+      <div class="logo">
+        <a class="color-s12" href="./index.html">BikeStyle</a>
+      </div>
+      <nav>
+        <a class="color-s11" href="./bicicletas.html">Bicicletas</a>
+        <a class="color-s11" href="./seguro.html">Seguro</a>
+        <a class="color-s11" href="./contato.html">Contato</a>
+      </nav>
     </div>
-    <nav>
-      <a class="color-s11" href="./bicicletas.html">Bicicletas</a>
-      <a class="color-s11" href="./seguro.html">Seguro</a>
-      <a class="color-s11" href="./contato.html">Contato</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main>
+  <main>
+    <section class="contato">
+      <div class="contato-decoração"></div>
+      <div class="form-box">
+        <div class="form-adicional color-s11">
+          <h3 class="meios-contatos">Fale conosco tambem:</h3>
+          <div class="contato-form">
+            <img src="./images/telephone-fill.svg" alt="phone-icon">
+            <p class="color-s12">52 9812 0992 1284 212</p>
+          </div>
+          <div class="contato-form">
+            <img src="./images/envelope-at-fill.svg" alt="envelope-icon">
+            <p class="color-s12">bikestyle@homail.com</p>
+          </div>
+          <div class="contato-form">
+            <img src="./images/geo-alt-fill.svg" alt="localização-icon">
+            <p class="color-s12">Rua logo ali, 422. SP - São Paulo, Brasil</p>
+          </div>
 
-  <section  class="contato">
+          <div class="icones">
+            <div class="redes-sociais">
+              <a class="icone-footer" href="#">
+                <img src="./images/facebook.svg" alt="">
+              </a>
+              <a class="icone-footer" href="#">
+                <img src="./images/instagram.svg" alt="">
+              </a>
+              <a class="icone-footer" href="#">
+                <img src="./images/twitter.svg" alt="">
+              </a>
+            </div>
+          </div>
 
-    <div class="contato-decoração"></div>
-    <div class="form-box">
-      <div class="form-adicional color-s11">
-        <h3 class="meios-contatos">Fale conosco tambem:</h3>
-        <div class="contato-form">
+        </div>
+        <form action="./contato.html" class="form">
+          <div class="titulo-contato">
+            <h2>Fale Conosco</h2>
+          </div>
+          <div class="informação-contato">
+            <div class="form-item nome">
+              <label for="nome" class="label-titulo">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Nome">
+            </div>
+            <div class="form-item telefone">
+              <label for="telefone" class="label-titulo">Telefone</label>
+              <input type="text" id="telefone" name="telefone" placeholder="(55) 9822 1294">
+            </div>
+            <div class="form-item email">
+              <label for="email" class="label-titulo">Email</label>
+              <input type="email" id="email" name="email" placeholder="exemplo@hotmail.com">
+            </div>
+            <textarea name="area-texto" id="textarea" cols="35" rows="5" placeholder="Sua mensagem"></textarea>
+          </div>
+          <button class="color-s12">Contate-nos</button>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="center">
+      <div class="logo color-s11">
+        <a class="color-s12" href="./index.html">BikeStyle</a>
+      </div>
+      <div class="contato-footer">
+        <h3 class="color-s9">Contato</h3>
+        <div class="contato-footer-content">
           <img src="./images/telephone-fill.svg" alt="phone-icon">
-          <p class="color-s12">52 9812 0992 1284 212</p>
+          <p class="color-s7">52 9812 0992 1284 212</p>
         </div>
-        <div class="contato-form">
-          <img src="./images/envelope-at-fill.svg" alt="envelope-icon">
-          <p class="color-s12">bikestyle@homail.com</p>
+        <div class="contato-footer-content">
+          <img src="./images/envelope-at-fill.svg" alt="phone-icon">
+          <p class="color-s7">bikestyle@homail.com</p>
         </div>
-        <div class="contato-form">
-          <img src="./images/geo-alt-fill.svg" alt="localização-icon">
-          <p class="color-s12">Rua logo ali, 422. SP - São Paulo, Brasil</p>
+        <div class="contato-footer-content">
+          <img src="./images/geo-alt-fill.svg" alt="phone-icon">
+          <p class="color-s7">Rua logo ali, 422. SP - São Paulo</p>
         </div>
-        
-        <div class="icones">
-          <div class="redes-sociais">
-            <a class="icone-footer" href="#">
-              <img src="./images/facebook.svg" alt="">
-            </a>
-            <a class="icone-footer" href="#">
-              <img src="./images/instagram.svg" alt="">
-            </a>
-            <a class="icone-footer" href="#">
-              <img src="./images/twitter.svg" alt="">
-            </a>
-          </div>
+        <div class="redes-sociais">
+          <a class="icone-footer" href="#">
+            <img src="./images/facebook.svg" alt="">
+          </a>
+          <a class="icone-footer" href="#">
+            <img src="./images/instagram.svg" alt="">
+          </a>
+          <a class="icone-footer" href="#">
+            <img src="./images/twitter.svg" alt="">
+          </a>
         </div>
-
       </div>
-      <form action="./contato.html" class="form">
-        <div class="titulo-contato">
-          <h2>Fale Conosco</h2>
-        </div>
-        <div class="informação-contato">
-          <div class="form-item nome">
-            <label for="nome" class="label-titulo">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Nome">
-          </div>
-          <div class="form-item telefone">
-            <label for="telefone" class="label-titulo">Telefone</label>
-            <input type="text" id="telefone" name="telefone" placeholder="(55) 9822 1294">
-          </div>
-          <div class="form-item email">
-            <label for="email" class="label-titulo">Email</label>
-            <input type="email" id="email" name="email" placeholder="exemplo@hotmail.com">
-          </div>
-          <textarea name="area-texto" id="textarea" cols="35" rows="5" placeholder="Sua mensagem"></textarea>
-        </div>
-        <button class="color-s12">Contate-nos</button>
-      </form>
-    </div>
-
-  </section>
-
-</main>
-
-<footer>
-  <div class="center">
-    <div class="logo color-s11">
-      <a class="color-s12" href="./index.html">BikeStyle</a>
-    </div>
-    <div class="contato-footer">
-      <h3 class="color-s9">Contato</h3>
-      <div class="contato-footer-content">
-        <img src="./images/telephone-fill.svg" alt="phone-icon">
-        <p class="color-s7">52 9812 0992 1284 212</p>
-      </div>
-      <div class="contato-footer-content">
-        <img src="./images/envelope-at-fill.svg" alt="phone-icon">
-        <p class="color-s7">bikestyle@homail.com</p>
-      </div>
-      <div class="contato-footer-content">
-        <img src="./images/geo-alt-fill.svg" alt="phone-icon">
-        <p class="color-s7">Rua logo ali, 422. SP - São Paulo</p>
-      </div>
-      <div class="redes-sociais">
-        <a class="icone-footer" href="#">
-          <img src="./images/facebook.svg" alt="">
-        </a>
-        <a class="icone-footer" href="#">
-          <img src="./images/instagram.svg" alt="">
-        </a>
-        <a class="icone-footer" href="#">
-          <img src="./images/twitter.svg" alt="">
-        </a>
+      <div class="interesses">
+        <h3 class="color-s9">Interesses</h3>
+        <a class="color-s7" href="./bicicletas.html">Bicicletas</a>
+        <a class="color-s7" href="./seguro.html">Seguros</a>
+        <a class="color-s7" href="./contato.html">Contato</a>
+        <a class="color-s7" href="./Termos.html">Termos e condições</a>
+        <a class="color-s7" href="./orçamento.html">Orçamentos</a>
+        <a class="color-s7" href="./suporte.html">Suporte</a>
       </div>
     </div>
-    <div class="interesses">
-      <h3 class="color-s9">Interesses</h3>
-      <a class="color-s7" href="./bicicletas.html">Bicicletas</a>
-      <a class="color-s7" href="./seguro.html">Seguros</a>
-      <a class="color-s7" href="./contato.html">Contato</a>
-      <a class="color-s7" href="./Termos.html">Termos e condições</a>
-      <a class="color-s7" href="./orçamento.html">Orçamentos</a>
-      <a class="color-s7" href="./suporte.html">Suporte</a>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
 </body>
+
 </html>
