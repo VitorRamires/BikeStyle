@@ -174,12 +174,18 @@ img{
   margin-left:15px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .titulo2::before{
   content: "";
   position: absolute;
-  width: 10px;
+  width: 7px;
   max-width: 150px;
-  height: 60%;
+  height: 50%;
   left:-20px;
   background:#9C4EFF;
 }
