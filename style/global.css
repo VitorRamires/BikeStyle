@@ -12,34 +12,42 @@ body{
 @font-face {
   font-family: "poppins-blackIT";
   src: url(../fonts/Poppins-BlackItalic.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins-black";
   src: url(../fonts/Poppins-Black.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins-bold";
   src: url(../fonts/Poppins-Bold.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins-semibold";
   src: url(../fonts/Poppins-SemiBold.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins-medium";
   src: url(../fonts/Poppins-Medium.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins-regular";
   src: url(../fonts/Poppins-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "dancingScript";
   src: url(../fonts/DancingScript.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins-light";
   src: url(../fonts/Poppins-Light.ttf);
+  font-display: swap;
 }
 
 .center{
@@ -376,9 +384,10 @@ footer p, a{
 }
 
 
-footer .contato-footer-content, footer a:not(:last-child){
+footer .contato-footer-content, footer .interesses a{
   margin: 0px 0 15px 0;
 }
+
 
 footer .interesses{
   display: inline-block;
