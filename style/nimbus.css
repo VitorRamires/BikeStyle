@@ -58,19 +58,25 @@
 }
 
 
+
 .produto-img-slide{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+  gap: 10px;
 }
 
-.produto-img-slide{
-  width: 33.3%;
+
+
+.currentSlide{
+  border:2px solid #7000FE !important;
 }
 
 .produto-img-slide img{
-  border: 5px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .produto-img-slide img:last-child{

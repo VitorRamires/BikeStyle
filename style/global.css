@@ -239,8 +239,6 @@ input::-webkit-inner-spin-button {
 }
 
 
-
-
 /*********** Header *****************/
 header{
   width: 100%;
@@ -289,7 +287,8 @@ header a::after{
   transition: 0.3s;
 }
 
-header a:hover:after{
+header a:hover::after,
+header a.ativo::after{
   width: 100%;
 }
 
