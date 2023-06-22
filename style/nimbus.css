@@ -1,6 +1,3 @@
-
-
-
 .nimbus{
   padding:100px 0 100px 0;
   width: 100%;
@@ -29,6 +26,7 @@
 
 .produto-img img{
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .produto-img::before{
@@ -73,10 +71,12 @@
 
 .currentSlide{
   border:2px solid #7000FE !important;
+  border-radius: 5px;
 }
 
 .produto-img-slide img{
   border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
 }
 
 .produto-img-slide img:last-child{

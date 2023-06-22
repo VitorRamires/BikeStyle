@@ -174,14 +174,12 @@
   display: flex;
 }
 
-
-#Ambos:checked ~ #opção-seguros{
-  display: flex;
-}
-
+#Ambos:checked ~ #opção-seguros, 
 #Ambos:checked ~ #opção-bicicletas{
   display: flex;
 }
+
+
 
 .nimbus3, 
 .nimbus2, 

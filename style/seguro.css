@@ -72,6 +72,23 @@
   background-image: url(../images/person-circle.svg);
 }
 
+.perguntas-item h3{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.perguntas-item h3::before{
+  content: "";
+  display: flex;
+  position: absolute;
+  left:-35px;
+  width: 4.5px;
+  height: 25px;
+  background-color: #9C4EFF;
+  transform: rotate(90deg);
+}
+
 @media (max-width:1370px){
   .vantagem-item p{
     font-size: 0.8rem;
@@ -137,19 +154,9 @@
   cursor: pointer;
 }
 
-.perguntas-item::before{
-  content: "";
-  position: absolute;
-  top:18%;
-  left:0;
-  width: 4.5px;
-  height: 25px;
-  background-color: #9C4EFF;
-  transform: rotate(90deg);
-}
 
 .perguntas-item:nth-child(odd){
-  background-color: #f3f3f3;
+  background-color: #f7f7f7;
   margin:15px 0 15px 0;
 }
 
@@ -162,13 +169,14 @@
   font-size:1.5rem;
   margin-bottom:10px;
   font-family: "poppins-semibold";
+
 }
 
 .perguntas-item p{
   font-size:0.85rem;
   max-width: 100ch;
   font-family: "poppins-light";
-  line-height: 1.2rem;
+  display: none;
 }
 
 .arrow{
@@ -178,9 +186,12 @@
   transition: 0.3s;
 }
 
-.perguntas-item:hover .arrow{
-  transform: rotate(180deg);
-  transition: 0.3s;
+.ativar{
+  display: block !important;
+}
+
+.rotacionar{
+  transform: rotate(-180deg);
 }
 
 @media (max-width:1120px){
@@ -234,17 +245,6 @@
   .perguntas-item p{
     font-size:0.5rem;
   }
-
-  .perguntas-item::before{
-    content: "";
-    position: absolute;
-    top:18%;
-    left:0;
-    width: 3.5px;
-    height: 15px;
-    background-color: #9C4EFF;
-    transform: rotate(90deg);
-  }
   
 }
 
@@ -257,6 +257,10 @@
 @media (max-width:405px){
   .perguntas .titulo{
     font-size: 0.85rem;
+  }
+
+  .titulo-vantagem{
+    font-size:2rem;
   }
 }
 

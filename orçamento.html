@@ -8,8 +8,10 @@
   <meta name="description" content="Bikestyle é uma loja virtual de bicicletas, que possue varias opções de customização, seguros e outras vantagens. 
   Ande com segurança e confiança na sua Bikestyle">
   <meta name="keywords" content="BikeStyle, bikestyle, Bikestyle, bicicletas, customização, segurança, seguros, confiança, vantagens, bikes, Bikes, loja, loja virtual">
-  <link rel="stylesheet" href="./style/index.css">
-  <link rel="preload" href="./style/index.css">
+
+  <link rel="stylesheet" href="./style/index.min.css">
+  <link rel="preload" href="./style/index.min.css">
+  <link rel="icon" href="./images/bicycle.svg" type="image/svg+xml">
   <title>Bicicletas</title>
 </head>
 
@@ -32,7 +34,7 @@
       <div class="orçamento-decoração"></div>
       <div class="form-box">
         <div class="produto-orçamento form-adicional">
-          <h2 class="color-s12">Bicicleta ou seguro?</h2>
+          <h2 class="color-s12">Escolha a opção</h2>
 
           <input type="radio" name="tipo" value="Bicicleta" id="Bicicleta">
           <label for="Bicicleta" class="bicicleta-item">Bicicleta</label>
@@ -44,7 +46,7 @@
           <label for="Ambos" class="ambos-item">Ambos</label>
 
           <div id="opção-seguros">
-            <h2 class="color-s12">Escolha seu seguro</h2>
+            <h2 class="color-s12">Opções de seguro</h2>
 
             <input type="radio" name="seguro-itens" value="luxo" id="luxo">
             <label for="luxo">Luxo</label>
@@ -92,7 +94,7 @@
           </div>
 
           <div id="opção-bicicletas">
-            <h2 class="color-s12">Escolha sua bicicleta</h2>
+            <h2 class="color-s12">Opções de bicicleta</h2>
 
             <input type="radio" name="bicicletas-itens" value="nimbus3" id="nimbus3">
             <label for="nimbus3">Nimbus 3000</label>
@@ -111,45 +113,49 @@
 
         <form action="./orçamento.html" class="form">
           <div class="info-pessoais">
-            <h3>Informações Pessoais</h3>
+            <h3>Informações</h3>
             <div class=" form-item nome">
               <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome">
+              <input type="text" id="nome" name="nome" placeholder="José da silva">
             </div>
             <div class="form-item telefone">
               <label for="telefone">Telefone</label>
-              <input type="text" id="telefone" name="telefone">
+              <input type="text" id="telefone" name="telefone"  placeholder="(55) 9822 1294">
             </div>
             <div class="form-item CPF">
               <label for="CPF">CPF</label>
-              <input type="number" id="CPF" name="CPF">
+              <input type="number" id="CPF" name="CPF" placeholder="921-331-123-01">
             </div>
             <div class="form-item email">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" placeholder="exemplo@hotmail.com">
             </div>
           </div>
           <div class="info-entrega">
             <h3>Entrega</h3>
             <div class=" form-item estado">
               <label for="estado">Estado</label>
-              <input type="text" id="estado" name="estado">
+              <input type="text" id="estado" name="estado" placeholder="Santa Cataria">
             </div>
             <div class="form-item cidade">
               <label for="cidade">Cidade</label>
-              <input type="text" id="cidade" name="cidade">
+              <input type="text" id="cidade" name="cidade" placeholder="Florianopolis">
             </div>
             <div class="form-item CEP">
               <label for="CEP">CEP</label>
-              <input type="number" id="CEP" name="CEP">
+              <input type="number" id="CEP" name="CEP" placeholder="80561-140">
             </div>
             <div class="form-item Numero">
               <label for="Numero">Numero</label>
-              <input type="number" id="Numero" name="Numero">
+              <input type="number" id="Numero" name="Numero" placeholder="331">
             </div>
             <div class="form-item Bairro">
               <label for="Bairro">Bairro</label>
-              <input type="text" id="Bairro" name="Bairro">
+              <input type="text" id="Bairro" name="Bairro" placeholder="São Gonçales da patrulha">
+            </div>
+            <div class="form-item Extra">
+              <label for="Extra">Extra</label>
+              <input type="text" id=Extra" name="Extra" placeholder="Numero do Ap, referencias e etc">
             </div>
           </div>
           <button class="color-s12">Solicitar Orçamento</button>
@@ -200,7 +206,9 @@
         <a class="interesses-link color-s8" href="./suporte.html">Suporte</a>
       </div>
     </div>
-    <script src="./js/script.js"></script>
+
+
+  <script src="./js/script.js"></script>
   </footer>
 
 </body>

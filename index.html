@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bikestyle é uma loja virtual de bicicletas, que possue varias opções de customização, seguros e outras vantagens. 
   Ande com segurança e confiança na sua Bikestyle">
   <meta name="keywords" content="BikeStyle, bikestyle, Bikestyle, bicicletas, customização, segurança, seguros, confiança, vantagens, bikes, Bikes, loja, loja virtual">
-  <link rel="stylesheet" href="./style/index.css">
-  <link rel="preload" href="./style/index.css">
+
+  <link rel="stylesheet" href="./style/index.min.css">
+  <link rel="preload" href="./style/index.min.css">
+  <link rel="icon" href="./images/bicycle.svg" type="image/svg+xml">
   <title>Inicio</title>
 </head>
 
@@ -31,17 +33,17 @@
     <section class="apresentation">
       <div class="center">
         <div class="apresentation-box">
-          <div class="apresentation-img">
+          <div class="apresentation-img fadeInDown" data-anime="250">
             <img src="images/incio.jpg" alt="bicicleta de apresentação">
           </div>
           <div class="apresentation-info">
             <article class="apresentation-text color-s11">
-              <h2>CONHEÇA A BIKESTYLE</h2>
-              <p>Aliquam imperdiet ut urna quis consequat. Pellentesque blandit est nec tristique cursus. Aenean ornare
+              <h2 data-anime="450" class="fadeInLeft">CONHEÇA A BIKESTYLE</h2>
+              <p data-anime="550" class="fadeInLeft">Aliquam imperdiet ut urna quis consequat. Pellentesque blandit est nec tristique cursus. Aenean ornare
                 pharetra orci vitae imperdiet. Sed fringilla, ipsum a vestibulum elementum, mi quam sagittis dolor.</p>
             </article>
             <div class="cta">
-              <a href="#" class="color-s11">CONHEÇA AGORA</a>
+              <a href="#" data-anime="600" class="color-s11 fadeInLeft">CONHEÇA AGORA</a>
             </div>
           </div>
         </div>
@@ -116,14 +118,14 @@
         </div>
         <div class="parceiros-box">
           <ul>
-            <li><img src="./images/caravan.svg" alt="caravan-parceiro-icone" width="140" height="38"></li>
-            <li><img src="./images/ranek.svg" alt="ranek-parceiro-icone" width="149" height="36"></li>
-            <li><img src="./images/handel.svg" alt="handel-parceiro-icone" width="139" height="50"></li>
-            <li><img src="./images/dogs.svg" alt="dogs-parceiro-icone" width="152" height="39"></li>
-            <li><img src="./images/lescone.svg" alt="lescone-parceiro-icone" width="208" height="41"></li>
-            <li><img src="./images/flexblog.svg" alt="flexblog-parceiro-icone" width="165" height="38"></li>
-            <li><img src="./images/wildbeast.svg" alt="wildbeast-parceiro-icone" width="196" height="34"></li>
-            <li><img src="./images/surfbot.svg" alt="surfbot-parceiro-icone" width="200" height="49"></li>
+            <li><img src="./images/caravan.svg" alt="caravan-parceiro-icone"></li>
+            <li><img src="./images/ranek.svg" alt="ranek-parceiro-icone"></li>
+            <li><img src="./images/handel.svg" alt="handel-parceiro-icone"></li>
+            <li><img src="./images/dogs.svg" alt="dogs-parceiro-icone"></li>
+            <li><img src="./images/lescone.svg" alt="lescone-parceiro-icone"></li>
+            <li><img src="./images/flexblog.svg" alt="flexblog-parceiro-icone"></li>
+            <li><img src="./images/wildbeast.svg" alt="wildbeast-parceiro-icone"></li>
+            <li><img src="./images/surfbot.svg" alt="surfbot-parceiro-icone"></li>
           </ul>
         </div>
       </div>
@@ -249,8 +251,9 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
 
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
