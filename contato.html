@@ -63,24 +63,24 @@
           </div>
 
         </div>
-        <form action="./contato.html" class="form">
+        <form action="./send-form.php" metod="post" class="form">
           <div class="titulo-contato">
             <h2>Fale Conosco</h2>
           </div>
           <div class="informação-contato">
             <div class="form-item nome">
               <label for="nome" class="label-titulo">Nome</label>
-              <input type="text" id="nome" name="nome" placeholder="José da silva">
+              <input type="text" id="nome" name="nome" placeholder="José da silva" required>
             </div>
             <div class="form-item telefone">
               <label for="telefone" class="label-titulo">Telefone</label>
-              <input type="text" id="telefone" name="telefone" placeholder="(55) 9822 1294">
+              <input type="text" id="telefone" name="telefone" placeholder="(55) 9822 1294" required>
             </div>
             <div class="form-item email">
               <label for="email" class="label-titulo">Email</label>
-              <input type="email" id="email" name="email" placeholder="exemplo@hotmail.com">
+              <input type="email" id="email" name="email" placeholder="exemplo@hotmail.com" required>
             </div>
-            <textarea name="area-texto" id="textarea" cols="35" rows="5" placeholder="Sua mensagem"></textarea>
+            <textarea name="area-texto" id="textarea" cols="35" rows="5" placeholder="Sua mensagem" required></textarea>
           </div>
           <button class="color-s12">Contate-nos</button>
         </form>
