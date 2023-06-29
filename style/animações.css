@@ -1,0 +1,79 @@
+.reveal{
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.active.revealLeft{
+  animation: fadeLeft 1s ease-out;
+}
+.active.revealRight{
+  animation: fadeRight 1s ease-out;
+}
+.active.revealTop{
+  animation: fadeTop 1s ease-out;
+}
+.active.revealBottom{
+  animation: fadeBottom 1s ease-out;
+}
+
+
+@keyframes fadeLeft{
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRight{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeTop{
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeBottom{
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft{
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

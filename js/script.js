@@ -43,7 +43,7 @@ links.forEach(handleLinks)
 
 
 
-/* Parametros orçamemnto */
+/* Parametros orçamemento */
 
 const urlParameters = new URLSearchParams(location.search)
 
@@ -51,6 +51,7 @@ function redirectOption(parameterIds){
   const getIdParameters = document.getElementById(parameterIds)
   if(getIdParameters){
   getIdParameters.checked = true
+  console.log(parameterIds)
   }
 }
 
@@ -80,11 +81,24 @@ function handleHidenQuestion(element){
 questionsElement.forEach(handleHidenQuestion)
 
 
+/*Animação de Fade*/
+var reveals = document.querySelectorAll(".reveal");
 
-if(window.SimpleAnime){
-  new SimpleAnime()
+function fadeAnimation(animeItens){
+  var windowHeight = window.innerHeight
+  var elementTop = animeItens.getBoundingClientRect().top;
+  var workingAnimation = 250
+
+  if(elementTop < windowHeight - workingAnimation){
+    animeItens.classList.add("active")
+  }
 }
 
+function animationHandle(){
+  reveals.forEach(fadeAnimation)
+}
+
+window.addEventListener("scroll", animationHandle);
 
 
 
