@@ -6,6 +6,11 @@
   box-shadow: inset 0 -100px 0 white;
 }
 
+.apresentation-text, .cta{
+  animation: fadeRight 2"s ease-out;
+}
+
+
 .apresentation-box{
   display: grid;
   grid-template-columns: 0.8fr 1fr;

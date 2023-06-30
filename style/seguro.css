@@ -2,6 +2,10 @@
   padding: 155px 0 140px 0;
 }
 
+#seguro .seguro-conteudo{
+  animation: fadeRight 1s ease-out;
+}
+
 .vantagens{
   background-color: #000000;
 }

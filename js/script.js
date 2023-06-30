@@ -89,6 +89,7 @@ function fadeAnimation(animeItens){
   var elementTop = animeItens.getBoundingClientRect().top;
   var workingAnimation = 250
 
+  
   if(elementTop < windowHeight - workingAnimation){
     animeItens.classList.add("active")
   }
@@ -98,7 +99,10 @@ function animationHandle(){
   reveals.forEach(fadeAnimation)
 }
 
+
 window.addEventListener("scroll", animationHandle);
+
+
 
 
 
