@@ -1,14 +1,19 @@
+.cta a:hover, .cta-comprar:hover, .bicicleta-produto a:hover{
+  background:#5603c2;
+  transition: 0.2s;  
+}
+
+.transition{
+  transition: 0.2s;
+}
+
 .reveal{
   position: relative;
   opacity: 0;
 }
-
 .reveal.active{
-  transform: translateY(0);
   opacity: 1;
-  transition: 1s ease-in-out;
 }
-
 .active.revealLeft{
   animation: fadeLeft 1s ease-out;
 }

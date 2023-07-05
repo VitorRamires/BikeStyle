@@ -155,11 +155,10 @@
   font-size: 1.25rem;
   border-radius: 5px;
   font-family: "poppins-bold";
+  transition: 0.2s;
 }
 
-.cta-comprar a:hover{
-  background: #5603c2;
-}
+
 
 
 .formas-pagamento{
