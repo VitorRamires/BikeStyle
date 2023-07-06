@@ -84,7 +84,33 @@ function handleHidenQuestion(element){
 questionsElement.forEach(handleHidenQuestion)
 
 
-/*Animação de Fade*/
+
+/*Video*/
+
+const buttonVideo = document.querySelector(".cta-video")
+let videoEl = document.querySelector("video")
+const closeButton = document.querySelector(".close")
+
+
+
+function handleVideo(){
+  const videoActive = videoEl.style.display = "block"
+
+  if(videoActive === "block"){
+    closeButton.style.display = "flex"
+    function handleClose(){
+      videoEl.style.display = "none"
+      closeButton.style.display = "none"
+    }
+    closeButton.addEventListener("click", handleClose)
+  }
+}
+
+
+buttonVideo.addEventListener("click", handleVideo)
+
+
+/*Animação scrollbar*/
 var reveals = document.querySelectorAll(".reveal");
 
 function fadeAnimation(animeItens){
@@ -92,7 +118,6 @@ function fadeAnimation(animeItens){
   var elementTop = animeItens.getBoundingClientRect().top;
   var workingAnimation = 250
 
-  
   if(elementTop < windowHeight - workingAnimation){
     animeItens.classList.add("active")
   }
@@ -104,8 +129,3 @@ function animationHandle(){
 
 
 window.addEventListener("scroll", animationHandle);
-
-
-
-
-
