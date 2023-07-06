@@ -85,6 +85,27 @@ questionsElement.forEach(handleHidenQuestion)
 
 
 
+/*Animação scrollbar*/
+var reveals = document.querySelectorAll(".reveal");
+
+function fadeAnimation(animeItens){
+  var windowHeight = window.innerHeight
+  var elementTop = animeItens.getBoundingClientRect().top;
+  var workingAnimation = 250
+
+  if(elementTop < windowHeight - workingAnimation){
+    animeItens.classList.add("active")
+  }
+}
+
+function animationHandle(){
+  reveals.forEach(fadeAnimation)
+}
+
+
+window.addEventListener("scroll", animationHandle);
+
+
 /*Video*/
 
 const buttonVideo = document.querySelector(".cta-video")
@@ -105,27 +126,6 @@ function handleVideo(){
     closeButton.addEventListener("click", handleClose)
   }
 }
-
-
 buttonVideo.addEventListener("click", handleVideo)
 
 
-/*Animação scrollbar*/
-var reveals = document.querySelectorAll(".reveal");
-
-function fadeAnimation(animeItens){
-  var windowHeight = window.innerHeight
-  var elementTop = animeItens.getBoundingClientRect().top;
-  var workingAnimation = 250
-
-  if(elementTop < windowHeight - workingAnimation){
-    animeItens.classList.add("active")
-  }
-}
-
-function animationHandle(){
-  reveals.forEach(fadeAnimation)
-}
-
-
-window.addEventListener("scroll", animationHandle);
