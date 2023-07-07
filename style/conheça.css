@@ -1,0 +1,134 @@
+.video-container{
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+}
+
+.sobre-nós{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.conheça{
+  width: 100%;
+  height: 100%;
+  padding:45px 0 0 0;
+  margin:90px 0 130px 0;
+}
+
+.conheça .titulo2{
+  margin-bottom:20px;
+}
+
+.conheça .center{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 35px;
+}
+
+.conheça-imgs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.conheça-texto{
+  font-size:0.8rem;
+  color:black;
+  margin:0 auto;
+  margin: 15px 0 0 0;
+  max-width: 200ch;
+  place-self: start start;
+  font-family: "poppins-light";
+}
+
+.conheça-item-box{
+  position: relative;
+}
+
+.conheça-item-box::after{
+  position: absolute;
+  content:"";
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 10px;
+  background:#7000FE;
+}
+
+
+.conheça2{
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-bottom:90px;
+}
+
+.cta-video{
+  cursor: pointer;
+}
+
+.informaçoes-conheça2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background:#222222;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30px 0 30px;
+}
+
+.informaçoes-conheça2 h2{
+  font-size: 2rem;
+  margin-bottom:50px;
+  font-family: "poppins-bold";
+}
+
+.informaçoes-conheça2 p{
+  max-width: 100ch;
+  margin-bottom:60px;
+  font-size: 1.2rem;
+  font-family: "poppins-regular";
+}
+
+.close{
+  position: absolute;
+  top:0;
+  right:5%;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border:none;
+}
+
+.close:hover{
+  background-color: transparent;
+}
+
+.video-container{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -109,7 +109,7 @@ window.addEventListener("scroll", animationHandle);
 /*Video*/
 
 const buttonVideo = document.querySelector(".cta-video")
-let videoEl = document.querySelector("video")
+let videoEl = document.querySelector(".video-container")
 const closeButton = document.querySelector(".close")
 
 

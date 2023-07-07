@@ -1,40 +1,9 @@
 /************ Apresentação **************/
-
-.close{
-  position: absolute;
-  top:0;
-  right:5%;
-  display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border:none;
-}
-
-.close:hover{
-  background-color: transparent;
-}
-
-video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-  top:0;
-  left:0;
-  display: none;
-}
-
 .apresentation{
   width: 100%;
   position: relative;
   background:black;
   box-shadow: inset 0 -100px 0 white;
-  overflow: hidden;
 }
 
 .apresentation-text, .cta{
