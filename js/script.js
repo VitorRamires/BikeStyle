@@ -106,26 +106,5 @@ function animationHandle(){
 window.addEventListener("scroll", animationHandle);
 
 
-/*Video*/
-
-const buttonVideo = document.querySelector(".cta-video")
-let videoEl = document.querySelector(".video-container")
-const closeButton = document.querySelector(".close")
-
-
-
-function handleVideo(){
-  const videoActive = videoEl.style.display = "block"
-
-  if(videoActive === "block"){
-    closeButton.style.display = "flex"
-    function handleClose(){
-      videoEl.style.display = "none"
-      closeButton.style.display = "none"
-    }
-    closeButton.addEventListener("click", handleClose)
-  }
-}
-buttonVideo.addEventListener("click", handleVideo)
 
 
