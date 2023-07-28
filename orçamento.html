@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +7,11 @@
   <meta name="description" content="Bikestyle é uma loja virtual de bicicletas, que possue varias opções de customização, seguros e outras vantagens. 
   Ande com segurança e confiança na sua Bikestyle">
   <meta name="keywords" content="BikeStyle, bikestyle, Bikestyle, bicicletas, customização, segurança, seguros, confiança, vantagens, bikes, Bikes, loja, loja virtual">
-
-  <link rel="stylesheet" href="./style/index.min.css">
-  <link rel="preload" href="./style/index.min.css">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="preload" href="./style/index.css">
   <link rel="icon" href="./images/bicycle.svg" type="image/svg+xml">
   <title>Bicicletas</title>
 </head>
-
 <body>
   <header class="color-s1">
     <div class="center">
@@ -28,53 +25,38 @@
       </nav>
     </div>
   </header>
-
   <main>
     <section class="orçamento">
       <div class="orçamento-decoração"></div>
       <div class="form-box">
         <div class="produto-orçamento form-adicional">
           <h2 class="color-s12">Escolha a opção</h2>
-
           <input type="radio" name="tipo" value="Bicicleta" id="Bicicleta">
           <label for="Bicicleta" class="bicicleta-item">Bicicleta</label>
-
           <input type="radio" name="tipo" value="Seguro" id="Seguro">
           <label for="Seguro" class="seguro-item">Seguro</label>
-
           <input type="radio" name="tipo" value="Ambos" id="Ambos">
           <label for="Ambos" class="ambos-item">Ambos</label>
-
           <div id="opção-seguros">
             <h2 class="color-s12">Opções de seguro</h2>
-
             <input type="radio" name="seguro-itens" value="luxo" id="luxo">
             <label for="luxo">Luxo</label>
-
-
             <input type="radio" name="seguro-itens" value="essencial" id="essencial">
             <label for="essencial">Essencial</label>
-
           </div>
-
           <div id="opção-bicicletas">
             <h2 class="color-s12">Opções de bicicleta</h2>
-
             <input type="radio" name="bicicletas-itens" value="nimbus3" id="nimbus3">
             <label for="nimbus3">Nimbus 3000</label>
             <img src="./images/nimbus2.jpg" alt="nimbus3000" class="nimbus3">
-
             <input type="radio" name="bicicletas-itens" value="nimbus2" id="nimbus2">
             <label for="nimbus2">Nimbus 2000</label>
             <img src="./images/nimbus1.jpg" alt="nimbus2000" class="nimbus2">
-
             <input type="radio" name="bicicletas-itens" value="nimbus1" id="nimbus1">
             <label for="nimbus1">Nimbus 1000</label>
             <img src="./images/nimbus3.jpg" alt="nimbus1000" class="nimbus1">
-
           </div>
         </div>
-
         <form action="./send-form.php" method="post" class="form">
           <div class="info-pessoais">
             <h3>Informações</h3>
@@ -124,11 +106,8 @@
           </div>
           <button class="color-s12">Solicitar Orçamento</button>
         </form>
-
     </section>
-
   </main>
-
   <footer>
     <div class="center">
       <div class="logo color-s11">
@@ -169,7 +148,6 @@
         <a class="interesses-link color-s8" href="./orçamento.html">Orçamentos</a>
       </div>
     </div>
-
 
   <script src="./js/script.js"></script>
   </footer>

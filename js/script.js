@@ -9,7 +9,6 @@ const displayMainSlide = document.querySelector(".produto-img img")
 
 function SlideOnClick(event){
 
-
   const targetItem = event.currentTarget
   const sourceItem = targetItem.src
   displayMainSlide.src = sourceItem
