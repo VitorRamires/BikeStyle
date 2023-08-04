@@ -4,14 +4,14 @@ document.documentElement.classList.add("js")
 
 /*Slide bicicletas*/
 
-const imagesSlide = Array.from(document.querySelectorAll(".produto-img-box img"))
-const displayMainSlide = document.querySelector(".produto-img img") 
+const imagesSlide = Array.from(document.querySelectorAll(".produto-img-box img")),
+      displayMainSlide = document.querySelector(".produto-img img") 
 
-function SlideOnClick(event){
+function slideOnClick(event){
 
-  const targetItem = event.currentTarget
-  const sourceItem = targetItem.src
-  displayMainSlide.src = sourceItem
+  const targetItem = event.currentTarget,
+        sourceItem = targetItem.src
+        displayMainSlide.src = sourceItem
 
 const itemActive = true
   if(itemActive === true){
@@ -22,11 +22,11 @@ const itemActive = true
   }
 }
 
-function SlideAction(image){
-  image.addEventListener('click', SlideOnClick)
+function slideAction(image){
+  image.addEventListener('click', slideOnClick)
 }
 
-imagesSlide.forEach(SlideAction)
+imagesSlide.forEach(slideAction)
 
 
 
@@ -60,17 +60,14 @@ function redirectOption(parameterIds){
 urlParameters.forEach(redirectOption)
 
 
-
-
 /* Manipular perguntas */
 
 const questionsElement = Array.from(document.querySelectorAll(".perguntas-item"))
 
 function showDisable(event){
-  const actualQuestion = event.currentTarget
-  const paragraphQuestion = actualQuestion.querySelector("p")
-  const arrowQuestion = actualQuestion.querySelector(".arrow img")
-
+  const actualQuestion = event.currentTarget,
+        paragraphQuestion = actualQuestion.querySelector("p"),
+        arrowQuestion = actualQuestion.querySelector(".arrow img")
 
   paragraphQuestion.classList.toggle("ativar"); 
   arrowQuestion.classList.toggle("rotacionar"); 
@@ -88,9 +85,9 @@ questionsElement.forEach(handleHidenQuestion)
 var reveals = document.querySelectorAll(".reveal");
 
 function fadeAnimation(animeItens){
-  var windowHeight = window.innerHeight
-  var elementTop = animeItens.getBoundingClientRect().top;
-  var workingAnimation = 250
+  var windowHeight = window.innerHeight,
+      elementTop = animeItens.getBoundingClientRect().top,
+      workingAnimation = 250
 
   if(elementTop < windowHeight - workingAnimation){
     animeItens.classList.add("active")
@@ -100,7 +97,6 @@ function fadeAnimation(animeItens){
 function animationHandle(){
   reveals.forEach(fadeAnimation)
 }
-
 
 window.addEventListener("scroll", animationHandle);
 
