@@ -1,3 +1,30 @@
+.menu-back{
+  position: fixed;
+  bottom:7%;
+  left:1%;
+  z-index: 99999;
+  background-color:#9c50ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-back img{
+  width: 50px;
+  padding:5px;
+  margin:0 auto;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1341%) hue-rotate(331deg) brightness(101%) contrast(110%);
+}
+
+
+.menu-back:hover{
+  background-color:#6500e9;
+  transition: 0.2s;
+}
+
 .cta a:hover, .cta-comprar:hover, .bicicleta-produto a:hover{
   background:#5603c2;
   transition: 0.2s;  
@@ -104,3 +131,10 @@
   }
 }
 
+@media screen and (max-width:520px){
+  .menu-back{
+    bottom:1%;
+    left:50%;
+    transform: translateX(-50%);
+  }
+}

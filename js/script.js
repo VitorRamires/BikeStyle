@@ -1,4 +1,3 @@
-
 document.documentElement.classList.add("js")
 
 const imagesSlide =document.querySelectorAll(".slide")
@@ -52,12 +51,13 @@ questionsElement.forEach((section, index) => {
 })
 
 
+const windowHeight = window.innerHeight
 const reveals = document.querySelectorAll(".reveal");
 function animationHandle(){
   reveals.forEach((element) => {
-    const windowHeight = window.innerHeight * 0.6
+    const windowHeightAjusted = windowHeight * 0.6
     const elementTop = element.getBoundingClientRect().top
-    if(windowHeight > elementTop){
+    if(windowHeightAjusted > elementTop){
       element.classList.add("active")
     }
   })
@@ -66,3 +66,16 @@ function animationHandle(){
 window.addEventListener("scroll", animationHandle)
 
 
+const menuBack = document.querySelector(".menu-back")
+const menu = document.querySelector("header")
+
+
+function backMenu(){
+  const menuOffsetBottom = menu.getBoundingClientRect().bottom
+  window.scrollTo({
+    top:menuOffsetBottom,
+    behavior:"smooth"
+  })
+}
+
+menuBack.addEventListener("click", backMenu)
