@@ -190,13 +190,7 @@
   transition: 0.3s;
 }
 
-.ativar{
-  display: block !important;
-}
 
-.rotacionar{
-  transform: rotate(-180deg);
-}
 
 @media (max-width:1120px){
   .perguntas-item h3{

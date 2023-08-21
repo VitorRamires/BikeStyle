@@ -7,6 +7,17 @@
   transition: 0.2s;
 }
 
+.show-answer{
+  display: block !important;
+  opacity: 1;
+  animation: showAnswer 0.3s ease-in-out ;
+}
+
+.rotate{
+  transform: rotate(-180deg);
+  transition: 0.3s;
+}
+
 .reveal{
   position: relative;
   opacity: 0;
@@ -27,6 +38,17 @@
   animation: fadeBottom 1s ease-out;
 }
 
+
+@keyframes showAnswer{
+  0%{
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 @keyframes fadeLeft{
   0%{
