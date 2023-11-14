@@ -729,13 +729,12 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  gap: 85px;
-  min-height: 550px;
-  background-color: #430296;
 }
 
 .depoimento-texto{
-  padding:85px 25px 85px 0;
+  padding:85px 25px 85px 55px;
+  background-color: #430296;
+  height: 100%;
 }
 
 .depoimento-texto p{
@@ -756,13 +755,13 @@
   right:1%;
 }
 
-
-
 .depoimento-foto{
-  height: 100%;
+  height: 600px;
 }
 
+
 .depoimento-foto img{
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -784,10 +783,6 @@
   .depoimento-texto p{
     font-size: 2rem;
   }
-
-  .depoimentos{
-    gap: 65px;
-  }
 }
 
 
@@ -802,16 +797,11 @@
   .depoimento-texto p{
     font-size: 1.4rem;
   }
-
-  .depoimentos{
-    gap: 55px;
-  }
 }
 
 @media (max-width:715px){
   .depoimentos{
     grid-template-columns: 1fr;
-    gap: 5px;
   }
 
   .bike{
