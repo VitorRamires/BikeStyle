@@ -46,6 +46,7 @@
 
 
 .apresentation-img, .apresentation-img img{
+  height: 100%;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0px 33px 24px -22px rgba(93,93,93,0.61);
