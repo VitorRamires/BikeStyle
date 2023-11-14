@@ -32,7 +32,6 @@
 
 
 .bicicleta-img{
-  height: 100%;
   z-index: 4;
 }
 
@@ -41,7 +40,6 @@
 }
 
 .bicicleta-img img{
-  height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
