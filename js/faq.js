@@ -10,13 +10,13 @@ export default class faq{
     this.button[index].classList.toggle("rotate")
   }
 
-  faqHandlerMethod(){
+  faqAddEvent(){
     this.questionsElement.forEach((element, index) => {
-      element.addEventListener("click", this.showAnwser(index))
+      element.addEventListener("click", ()=>{this.showAnwser(index)})
     })
   }
 
   initialization(){
-    this.faqHandlerMethod
+    this.faqAddEvent()
   }
 }

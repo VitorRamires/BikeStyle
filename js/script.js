@@ -50,18 +50,6 @@ function redirectOption(parameterIds){
 urlParameters.forEach(redirectOption)
 
 
-const questionsElement = document.querySelectorAll(".perguntas-item")
-const paragraphElement = document.querySelectorAll(".perguntas-item p")
-const arrow = document.querySelectorAll(".arrow")
-
-function answerHandle(index){
-  paragraphElement[index].classList.toggle("show-answer")
-  arrow[index].classList.toggle("rotate")
-}
-
-questionsElement.forEach((section, index) => {
-  section.addEventListener("click", ()=>{answerHandle(index)})
-})
 
 
 
