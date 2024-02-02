@@ -1,5 +1,4 @@
 document.documentElement.classList.add("js")
-document.documentElement.classList.add("js")
 
 import startScroll from '../js/startScroll.js'
 import scrollAnimation from '../js/scrollAnimation.js'
