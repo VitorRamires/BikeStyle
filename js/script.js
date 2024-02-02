@@ -3,14 +3,17 @@ document.documentElement.classList.add("js")
 import startScroll from '../js/startScroll.js'
 import scrollAnimation from '../js/scrollAnimation.js'
 import faq from '../js/faq.js'
+import urlLocation from '../js/urlLocation.js'
 
 let buttonScroll = new startScroll(".menu-back", "header")
 let newScrollAnimation = new scrollAnimation(".reveal")
 let faqHandler = new faq(".perguntas-item", ".perguntas-item p", ".arrow")
+let newUrlLocation = new urlLocation()
 
 buttonScroll.initialization()
 newScrollAnimation.initialization()
 faqHandler.initialization()
+newUrlLocation.initialization()
 
 
 const imagesSlide =document.querySelectorAll(".slide")
@@ -38,16 +41,6 @@ function handleLinks(linkItem){
 }
 links.forEach(handleLinks)
 
-
-const urlParameters = new URLSearchParams(location.search)
-function redirectOption(parameterIds){
-  const getIdParameters = document.getElementById(parameterIds)
-  if(getIdParameters){
-  getIdParameters.checked = true
-  console.log(parameterIds)
-  }
-}
-urlParameters.forEach(redirectOption)
 
 
 
