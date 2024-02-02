@@ -3,14 +3,18 @@ export default class selectProductImg{
     this.imagesSlide = document.querySelectorAll(slideElement)
     this.displayMainSlide = document.querySelector(productElement) 
   }
+
+  changeHandler(index, image){
+    this.displayMainSlide.src =  this.imagesSlide[index].src
+    this.imagesSlide.forEach(item=>{
+      item.classList.remove('currentSlide')
+    })
+    image.classList.add('currentSlide')
+  }
   
   addListener(){
-    this.imagesSlide.forEach((image)=>{
-      image.onclick = ()=>{
-        this.displayMainSlide.src = image.src
-        image.classList.add("currentSlide")
-      }
-      image.classList.remove("currentSlide")
+    this.imagesSlide.forEach((image, index)=>{
+      image.addEventListener('click', ()=>{this.changeHandler(index, image)})
     })
   }
 
