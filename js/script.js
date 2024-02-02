@@ -4,16 +4,19 @@ import startScroll from '../js/startScroll.js'
 import scrollAnimation from '../js/scrollAnimation.js'
 import faq from '../js/faq.js'
 import urlLocation from '../js/urlLocation.js'
+import linkNavActive from '../js/links.js'
 
 let buttonScroll = new startScroll(".menu-back", "header")
 let newScrollAnimation = new scrollAnimation(".reveal")
 let faqHandler = new faq(".perguntas-item", ".perguntas-item p", ".arrow")
 let newUrlLocation = new urlLocation()
+let newlinkTabs = new linkNavActive("header nav a")
 
 buttonScroll.initialization()
 newScrollAnimation.initialization()
 faqHandler.initialization()
 newUrlLocation.initialization()
+newlinkTabs.initialization()
 
 
 const imagesSlide =document.querySelectorAll(".slide")
@@ -32,14 +35,7 @@ imagesSlide.forEach((image)=>{
   image.addEventListener('click', slideOnClick)
 })
 
-const links = Array.from(document.querySelectorAll("header nav a"))
-function handleLinks(linkItem){
-  const linkHref = linkItem.href
-  if(document.location.href.includes(linkHref)){
-    linkItem.classList.add("link-active")
-  }
-}
-links.forEach(handleLinks)
+
 
 
 
