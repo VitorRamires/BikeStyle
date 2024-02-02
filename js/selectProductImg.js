@@ -4,7 +4,7 @@ export default class selectProductImg{
     this.displayMainSlide = document.querySelector(productElement) 
   }
 
-  changeHandler(index, image){
+  changeHandle(index, image){
     this.displayMainSlide.src =  this.imagesSlide[index].src
     this.imagesSlide.forEach(item=>{
       item.classList.remove('currentSlide')
@@ -14,7 +14,7 @@ export default class selectProductImg{
   
   addListener(){
     this.imagesSlide.forEach((image, index)=>{
-      image.addEventListener('click', ()=>{this.changeHandler(index, image)})
+      image.addEventListener('click', ()=>{this.changeHandle(index, image)})
     })
   }
 
