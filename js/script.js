@@ -1,7 +1,20 @@
 document.documentElement.classList.add("js")
 
+import startScroll from '../js/startScroll.js'
+import scrollAnimation from '../js/scrollAnimation.js'
+import faq from '../js/faq.js'
+
+let buttonScroll = new startScroll(".menu-back", "header")
+let newScrollAnimation = new scrollAnimation(".reveal")
+let faqHandler = new faq(".perguntas-item", ".perguntas-item p", ".arrow")
+
+buttonScroll.initialization()
+newScrollAnimation.initialization()
+faqHandler.initialization()
+
+
 const imagesSlide =document.querySelectorAll(".slide")
-      displayMainSlide = document.querySelector(".produto-img img") 
+const displayMainSlide = document.querySelector(".produto-img img") 
 
 function slideOnClick(){
   const actualImg = this.src
@@ -51,31 +64,5 @@ questionsElement.forEach((section, index) => {
 })
 
 
-const windowHeight = window.innerHeight
-const reveals = document.querySelectorAll(".reveal");
-function animationHandle(){
-  reveals.forEach((element) => {
-    const windowHeightAjusted = windowHeight * 0.6
-    const elementTop = element.getBoundingClientRect().top
-    if(windowHeightAjusted > elementTop){
-      element.classList.add("active")
-    }
-  })
-
-}
-window.addEventListener("scroll", animationHandle)
 
 
-const menuBack = document.querySelector(".menu-back")
-const menu = document.querySelector("header")
-
-
-function backMenu(){
-  const menuOffsetBottom = menu.getBoundingClientRect().bottom
-  window.scrollTo({
-    top:menuOffsetBottom,
-    behavior:"smooth"
-  })
-}
-
-menuBack.addEventListener("click", backMenu)
